@@ -1,0 +1,874 @@
+[ 2017-02-19T15:06:17+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:10:41+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:12:03+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:12:43+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:19:11+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:19:37+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:20:36+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:20:42+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:21:44+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:21:54+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:22:18+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:22:41+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:23:20+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:23:41+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:24:21+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:33:33+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:35:14+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:36:07+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:36:22+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:37:23+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:37:53+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:38:19+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:39:06+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:39:13+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:41:25+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:41:43+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-19T15:56:14+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:56:40+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-19T15:56:56+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:03:55+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:04:22+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:05:11+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:05:46+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:07:52+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:10:03+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:10:43+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:11:43+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:13:27+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:13:54+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:13:57+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:14:35+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:15:07+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:15:33+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:16:03+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:16:19+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:19:50+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:29:20+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:29:50+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:30:00+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:30:04+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:31:21+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:31:27+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:34:36+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:35:24+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:35:26+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+
+[ 2017-02-19T16:35:59+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant menuid - assumed 'menuid' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 26 行.
+NOTIC: [8] Use of undefined constant imgUrl1 - assumed 'imgUrl1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant name1 - assumed 'name1' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant imgUrl2 - assumed 'imgUrl2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant name2 - assumed 'name2' D:\amp\htdocs\basic\App\Admin\Service\IndexService.class.php 第 28 行.
+

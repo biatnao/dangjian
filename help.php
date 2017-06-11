@@ -1,0 +1,41 @@
+<pre>IS_CGI 是否属于 CGI模式  
+IS_WIN 是否属于Windows 环境  
+IS_CLI 是否属于命令行模式  
+__ROOT__ 网站根目录地址  
+__APP__ 当前应用（入口文件）地址  
+__MODULE__ 当前模块的URL地址  
+__CONTROLLER__ 当前控制器的URL地址  
+__ACTION__ 当前操作的URL地址  
+__SELF__ 当前URL地址  
+__INFO__ 当前的PATH_INFO字符串  
+__EXT__ 当前URL地址的扩展名  
+MODULE_NAME 当前模块名  
+MODULE_PATH 当前模块路径
+CONTROLLER_NAME 当前控制器名  
+CONTROLLER_PATH 当前控制器路径 
+ACTION_NAME 当前操作名  
+APP_DEBUG 是否开启调试模式  
+APP_MODE 当前应用模式名称  
+APP_STATUS 当前应用状态
+STORAGE_TYPE 当前存储类型
+MODULE_PATHINFO_DEPR 模块的PATHINFO分割符
+MEMORY_LIMIT_ON 系统内存统计支持  
+RUNTIME_FILE 项目编译缓存文件名  
+THEME_NAME 当前主题名称  
+THEME_PATH 当前模板主题路径  
+LANG_SET 当前浏览器语言  
+MAGIC_QUOTES_GPC MAGIC_QUOTES_GPC 
+NOW_TIME 当前请求时间（时间戳）
+REQUEST_METHOD 当前请求类型
+IS_GET 当前是否GET请求 
+IS_POST 当前是否POST请求
+IS_PUT 当前是否PUT请求 
+IS_DELETE 当前是否DELETE请求 
+IS_AJAX 当前是否AJAX请求 
+BIND_MODULE 当前绑定的模块
+BIND_CONTROLLER 当前绑定的控制器
+BIND_ACTION 当前绑定的操作
+CONF_EXT 配置文件后缀
+CONF_PARSE 配置文件解析方法
+TMPL_PATH 用于改变全局视图目录
+</pre>

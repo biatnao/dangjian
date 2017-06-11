@@ -1,0 +1,22 @@
+[ 2017-06-11T04:03:55+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+NOTIC: [8] Undefined index: signature D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 34 行.
+NOTIC: [8] Undefined index: timestamp D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 35 行.
+NOTIC: [8] Undefined index: nonce D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 36 行.
+
+[ 2017-06-11T21:21:21+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+NOTIC: [8] Undefined index: signature D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 34 行.
+NOTIC: [8] Undefined index: timestamp D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 35 行.
+NOTIC: [8] Undefined index: nonce D:\amp\htdocs\dangjian\ThinkPHP\Library\Wechat\Wechat.class.php 第 36 行.
+

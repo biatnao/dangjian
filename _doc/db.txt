@@ -1,0 +1,181 @@
+实体
+
+comic							漫画
+id
+name		
+create_time
+
+persona                         人物志
+id 
+name                            sy       
+introduce
+order
+status
+comic_id_FK                     sy
+camp_id_FK                      sy
+face                            默认形象
+face_sm                         默认形象小图
+create_time
+
+camp							阵营
+id
+name                            
+comic_id_FK
+create_time
+
+ability                         能力
+id
+name                            sy
+info
+impress
+ability_type_id_FK
+comic_id_FK                     sy
+create_time
+
+ability_type					能力类型
+id
+pid
+name
+info
+comic_id_FK
+create_time
+
+tag								标签
+id
+name                            sy
+impress
+info
+url
+persona_id_FK
+comic_id_FK
+create_time
+
+biographies                     传记
+id
+title
+content
+order
+persona_id_FK
+create_time
+
+fetter                          羁绊
+id
+name
+impress
+info
+comic_id_FK
+create_time
+
+honour                          称号
+id
+name
+info
+impress
+create_time
+
+
+album                           相册
+id
+name
+info
+user_id_FK
+persona_id_FK
+type
+comic_id_FK
+create_time
+
+
+category                        文章栏目
+id
+pid                             sy
+name
+order
+create_time
+
+article                         文章
+id
+title
+cate_id_FK
+author
+impress
+from
+info
+hit
+create_time
+
+article_contents                文章详情
+id
+content
+article_id_FK                   sy
+
+
+article_comment                 文章评论
+id
+article_id_FK
+comment
+create_time
+user_id_FK
+
+
+file                            文件
+id
+name
+ext
+code
+path
+spath
+size
+create_time
+
+album_file_map              相册文件关联
+id
+album_id_FK
+file_id_FK
+create_time
+
+persona_album_map
+id
+persona_id_FK
+album_id_FK
+is_offical
+
+
+persona_trick_map           人物招式关联
+id
+persona_id_FK
+trick_id_FK
+create_time
+
+persona_biographies_map     人物传记关联
+id
+persona_id_FK
+biographies_id_FK
+create_time
+
+persona_fetter_map          人物羁绊关联
+id
+persona_id_FK
+fetter_id_FK
+create_time
+
+persona_ability_map			人物能力关联
+id
+persona_id_FK
+ability_id_FK
+create_time
+
+persona_honour_map          人物称号关联
+id
+persona_id_FK
+honour_id_FK
+create_time
+
+系统相关
+user                        用户
+weixin                      微信
+user_wx_map                 用户微信关联
+admin                       后台管理
+nav                         后台菜单
+
+
+
