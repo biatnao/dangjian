@@ -5,26 +5,48 @@ use Wechat\Wechat;
 
 class IndexController extends AdminBaseController {
 
-    public function index(){
-		$options = array(
-			'token'=>'tokenaccesskey' //填写你设定的key
-		);
-		$weObj = new Wechat($options);
-		dump($weObj);
-		$weObj->valid();
-		$type = $weObj->getRev()->getRevType();
-		switch($type) {
-			case Wechat::MSGTYPE_TEXT:
-				$weObj->text("hello, I'm wechat")->reply();
-				exit;
-			break;
-			case Wechat::MSGTYPE_EVENT:
-			break;
-			case Wechat::MSGTYPE_IMAGE:
-			default:
-			$weObj->text("help info")->reply();
+	public static $service = [];
+
+	public function getService( $name = '' ){
+		if( empty($name) ) return false;
+		$name = ucfirst(strtolower($name));
+		if( !isset($this->service[$name]) || empty($this->service[$name]) ){
+			self::$service[$name] = D( $name , 'Service' );
 		}
-        echo 111;
+		return self::$service[$name];
+	}
+
+    public function login(){
+		if( IS_AJAX ){
+			$username 	= I('username');
+			$pwd 		= I('pwd');
+			echo json_encode(tp_return( 0 , 'ok' , [$username,$pwd] ));
+			exit;
+		}else{
+			$this->display();
+		}
+    }
+
+    public function register(){
+		if( IS_AJAX ){
+			$username = I('username');
+			$pwd = I('pwd');
+			
+			$indexObj = $this->getService('index');
+
+			$param = [
+				'username'=>$username,
+				'pwd'=>$pwd,
+			];
+
+			$ret = $indexObj->register( $param );
+
+			unset($indexObj);
+			echo json_encode( $ret );
+			exit;
+		}else{
+			$this->display();
+		}
     }
 
 }

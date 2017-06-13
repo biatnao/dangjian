@@ -866,14 +866,14 @@ function tp_return(){
         $returnArray = $args[0];
     }elseif($nums == 3){
         $returnArray = array(
-            'status'=>$args[0],
-            'info'=>$args[1],
+            'code'=>$args[0],
+            'msg'=>$args[1],
             'list'=>$args[2],
         );
     }elseif($nums == 4){
         $returnArray =  array(
-            'status'=>$args[0],
-            'info'=>$args[1],
+            'code'=>$args[0],
+            'msg'=>$args[1],
             'list'=>$args[2],
         );
         foreach ($args[3] as $key => $value) {
@@ -882,8 +882,8 @@ function tp_return(){
 
     }else{
         $returnArray = array(
-            'status'=>-999,
-            'info'=>'返回数组参数错误'
+            'code'=>-999,
+            'msg'=>'返回数组参数错误'
         );
     }
     return $returnArray;
