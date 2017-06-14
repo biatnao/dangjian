@@ -20,7 +20,16 @@ class IndexController extends AdminBaseController {
 		if( IS_AJAX ){
 			$username 	= I('username');
 			$pwd 		= I('pwd');
-			echo json_encode(tp_return( 0 , 'ok' , [$username,$pwd] ));
+
+			$indexObj = $this->getService('index');
+			$param = [
+				'username'=>$username,
+				'pwd'=>$pwd,
+			];
+			$ret = $indexObj->login( $param );
+			unset($indexObj);
+
+			echo json_encode( $ret );
 			exit;
 		}else{
 			$this->display();
@@ -33,20 +42,26 @@ class IndexController extends AdminBaseController {
 			$pwd = I('pwd');
 			
 			$indexObj = $this->getService('index');
-
 			$param = [
 				'username'=>$username,
 				'pwd'=>$pwd,
 			];
-
 			$ret = $indexObj->register( $param );
-
 			unset($indexObj);
+
 			echo json_encode( $ret );
 			exit;
 		}else{
 			$this->display();
 		}
+    }
+
+    public function index(){
+		$this->display();
+    }
+
+    public function welcome(){
+    	$this->display();
     }
 
 }

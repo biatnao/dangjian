@@ -18,4 +18,15 @@ class UserModel extends BaseModel {
     	$bool = $this->add($data);
     	return $bool;
     }
+
+    public function getAdmin( $param ){
+        $data = [
+            'name'=>$param['name'],
+        ];
+
+        $admin = $this->where($data)->find();
+        return $admin;
+    }
+
+
 }

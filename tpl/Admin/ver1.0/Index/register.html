@@ -40,7 +40,7 @@
             </div>
             <button class="btn btn-primary block full-width m-b" onclick="register()">注 册</button>
 
-            <p class="text-muted text-center"><small>已经有账户了？</small><a href="index.php?m=admin&c=index&a=login">点此登录</a>
+            <p class="text-muted text-center"><small>已经有账户了？</small><a href="/index.php?m=admin&c=index&a=login">点此登录</a>
             </p>
         </div>
     </div>
@@ -61,7 +61,7 @@
         });
 
         var register = function(){
-            var url = "index.php?m=admin&c=index&a=register";//"{:U('Admin/index/register')}";
+            var url = "/index.php?m=admin&c=index&a=register";//"{:U('Admin/index/register')}";
             var username = $('input[name=username]').val();
             if( $.trim(username) == '' ){
                 layer.alert('用户名不能为空');
@@ -77,9 +77,9 @@
             $.post(url , data , function( res ){
                 console.log(res);
                 if(res.code == 0){
-                    layer.alert(res.msg);
-                    return false;
-                    // location.href = '';
+                    layer.msg(res.msg, function(){
+                        location.href = '/index.php?m=admin&c=index&a=index';
+                    });
                 }else{
                     layer.alert(res.msg);
                     return false;

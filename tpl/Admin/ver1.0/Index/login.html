@@ -41,7 +41,7 @@
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
                     </ul>
-                    <strong>还没有账号？ <a href="index.php?m=admin&c=index&a=register">立即注册&raquo;</a></strong>
+                    <strong>还没有账号？ <a href="/index.php?m=admin&c=index&a=register">立即注册&raquo;</a></strong>
                 </div>
             </div>
             <div class="col-sm-5">
@@ -60,6 +60,8 @@
         </div>
     </div>
     <script src="__PUBLIC__/statics/hplus/js/jquery.min.js"></script>
+    <!-- layer -->
+    <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
     <script type="text/javascript">
     var login = function(){
         var url = "index.php?m=admin&c=index&a=login";//"{:U('Admin/index/login')}";
@@ -67,7 +69,15 @@
         var pwd = $('input[name=pwd]').val();
         var data = { 'username':username , 'pwd':pwd };
         $.post(url , data , function( res ){
-            console.log(res);
+            if( res.code === 0 ){
+                layer.msg(res.msg, function(){
+                    location.href = '/index.php?m=admin&c=index&a=index';
+                });
+            }else{
+                layer.alert(res.msg);
+                return false;
+            }
+            
         } , 'json');
     }
         

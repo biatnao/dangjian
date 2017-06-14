@@ -1,231 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>bjyadmin管理后台</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
-    <!--[if IE 7]>
-        <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome-ie7.min.css" />
-    <![endif]-->
-    <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/ace.min.css" />
-    <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/ace-rtl.min.css" />
-    <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/ace-skins.min.css" />
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/ace-ie.min.css" />
-    <![endif]-->
-    <script src="__ADMIN_ACEADMIN__/js/ace-extra.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>H+ 后台主题UI框架 - 主页</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
     <!--[if lt IE 9]>
-        <script src="__ADMIN_ACEADMIN__/js/html5shiv.js"></script>
-        <script src="__ADMIN_ACEADMIN__/js/respond.min.js"></script>
+    <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
-    <style type="text/css">
-        #sidebar .nav-list{
-            overflow-y: auto;
-        }
-    </style>
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0" rel="stylesheet">
 </head>
 
-<body style="overflow-y: hidden;">
-<div class="navbar navbar-default" id="navbar">
-    <script type="text/javascript">
-        try{ace.settings.check('navbar' , 'fixed')}catch(e){}
-    </script>
-    <div class="navbar-container" id="navbar-container">
-        <div class="navbar-header pull-left">
-            <a href="#" class="navbar-brand">
-                <small>
-                    <i class="icon-leaf"></i>
-                    bjyadmin管理后台
-                </small>
-            </a><!-- /.brand -->
-        </div>
-        <div class="navbar-header pull-right" role="navigation">
-            <ul class="nav ace-nav">
-                <li class="light-blue">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="__ADMIN_ACEADMIN__/avatars/user.jpg" alt="Jason's Photo" />
-                        <span class="user-info">
-                            <small>欢迎光临,</small>
-                            {$_SESSION['user']['username']}
-                        </span>
-                        <i class="icon-caret-down"></i>
-                    </a>
-
-                    <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="{:U('Home/Index/logout')}">
-                                <i class="icon-off"></i>
-                                退出
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="__PUBLIC__/statics/hplus/img/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                </span>
                             </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                                </li>
+                                <li><a class="J_menuItem" href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a class="J_menuItem" href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">H+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="index_v1.html" data-index="0">主页示例一</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="index_v2.html">主页示例二</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="index_v3.html">主页示例三</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="index_v4.html">主页示例四</a>
+                            </li>
+                            <li>
+                                <a href="index_v5.html" target="_blank">主页示例五</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="contacts.html">联系人</a>
+                            </li>
+                            <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                            </li>
+                            <li>
+                                <a href="#">项目管理 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="projects.html">项目</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="project_detail.html">项目详情</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="teams_board.html">团队管理</a>
+                            </li>
+                            <li><a class="J_menuItem" href="social_feed.html">信息流</a>
+                            </li>
+                            <li><a class="J_menuItem" href="clients.html">客户管理</a>
+                            </li>
+                            <li><a class="J_menuItem" href="file_manager.html">文件管理器</a>
+                            </li>
+                            <li><a class="J_menuItem" href="calendar.html">日历</a>
+                            </li>
+                            <li>
+                                <a href="#">博客 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="blog.html">文章列表</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="article.html">文章详情</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">时间轴 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="timeline.html">时间轴</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="timeline_v2.html">时间轴v2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="pin_board.html">标签墙</a>
+                            </li>
+                            <li>
+                                <a href="#">单据 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="invoice.html">单据</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="invoice_print.html">单据打印</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="search_results.html">搜索结果</a>
+                            </li>
+                            <li><a class="J_menuItem" href="forum_main.html">论坛</a>
+                            </li>
+                            <li>
+                                <a href="#">即时通讯 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="chat_view.html">聊天窗口</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="webim.html">layIM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">登录注册相关 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="login.html" target="_blank">登录页面</a>
+                                    </li>
+                                    <li><a href="login_v2.html" target="_blank">登录页面v2</a>
+                                    </li>
+                                    <li><a href="register.html" target="_blank">注册页面</a>
+                                    </li>
+                                    <li><a href="lockscreen.html" target="_blank">登录超时</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="404.html">404页面</a>
+                            </li>
+                            <li><a class="J_menuItem" href="500.html">500页面</a>
+                            </li>
+                            <li><a class="J_menuItem" href="empty_page.html">空白页</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
+
+                    </button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive"><a>定位当前选项卡</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+                        </li>
+                        <li class="J_tabCloseOther"><a>关闭其他选项卡</a>
                         </li>
                     </ul>
-                </li>
-            </ul><!-- /.ace-nav -->
-        </div>
-    </div>
-</div>
-
-<div class="main-container" id="main-container">
-    <script type="text/javascript">
-        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
-    </script>
-
-    <div class="main-container-inner">
-        <a class="menu-toggler" id="menu-toggler" href="#">
-            <span class="menu-text"></span>
-        </a>
-
-        <div class="sidebar" id="sidebar">
-            <script type="text/javascript">
-                try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-            </script>
-            <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-                <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                    <button class="btn btn-success">
-                        <i class="icon-signal"></i>
-                    </button>
-
-                    <button class="btn btn-info">
-                        <i class="icon-pencil"></i>
-                    </button>
-
-                    <button class="btn btn-warning">
-                        <i class="icon-group"></i>
-                    </button>
-
-                    <button class="btn btn-danger">
-                        <i class="icon-cogs"></i>
-                    </button>
                 </div>
-
-                <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                    <span class="btn btn-success"></span>
-
-                    <span class="btn btn-info"></span>
-
-                    <span class="btn btn-warning"></span>
-
-                    <span class="btn btn-danger"></span>
-                </div>
-            </div><!-- #sidebar-shortcuts -->
-            <ul class="nav nav-list">
-                <foreach name="data" item="v">
-                    <empty name="v['_data']">
-                        <li class="b-nav-li">
-                            <a href="{:U($v['mca'])}" target="right_content">
-                                <i class="fa fa-{$v['ico']} icon-test"></i>
-                                <span class="menu-text"> {$v['name']} </span>
-                            </a>
-                        </li>
-                    <else />
-                        <li class="b-has-child">
-                            <a href="#" class="dropdown-toggle b-nav-parent">
-                                <i class="fa fa-{$v['ico']} icon-test"></i>
-                                <span class="menu-text"> {$v['name']} </span>
-
-                                <b class="arrow icon-angle-down"></b>
-                            </a>
-                            <ul class="submenu">
-                                <foreach name="v['_data']" item="n">
-                                    <li class="b-nav-li">
-                                        <a href="{:U($n['mca'])}" target="right_content">
-                                            <i class="icon-double-angle-right"></i>
-                                            {$n['name']}
-                                        </a>
-                                    </li>
-                                </foreach>
-                            </ul>
-                        </li>
-                    </empty>
-                </foreach>
-            </ul>
-            <div class="sidebar-collapse" id="sidebar-collapse">
-                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
-
-            <script type="text/javascript">
-                try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
-            </script>
+            <div class="row J_mainContent" id="content-main">
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{:U('admin/index/welcome')}" frameborder="0" data-id="index_v1.html" seamless></iframe>
+            </div>
+            <div class="footer">
+                <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
+                </div>
+            </div>
         </div>
-        <div class="main-content">
-            <div class="page-content">
-                <iframe id="content-iframe" src="{:U('Admin/Index/welcome')}" frameborder="0" width="100%" height="100%" name="right_content" scrolling="auto" frameborder="0" scrolling="no"></iframe>
-            </div><!-- /.page-content -->
-        </div><!-- /.main-content -->
-    </div><!-- /.main-container-inner -->
+        <!--右侧部分结束-->
+        
+    </div>
 
-    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-        <i class="icon-double-angle-up icon-only bigger-110"></i>
-    </a>
-</div>
+    <!-- 全局js -->
+    <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 
-<!--[if !IE]> -->
-    <script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
-<!-- <![endif]-->
+    <script src="__PUBLIC__/statics/hplus/js/metisMenu/jquery.metisMenu.js"></script>
+    <script src="__PUBLIC__/statics/hplus/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- 自定义js -->
+    <script src="__PUBLIC__/statics/hplus/js/hplus.js?v=4.1.0"></script>
+    <script src="__PUBLIC__/statics/hplus/js/contabs.js"></script>
 
-<!--[if IE]>
-    <script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
-<![endif]-->
+    <!-- 第三方插件 -->
+    <script src="__PUBLIC__/statics/hplus/js/pace/pace.min.js"></script>
 
-<!--[if !IE]> -->
-    <script type="text/javascript">
-        window.jQuery || document.write("<script src='__ADMIN_ACEADMIN__/js/jquery-2.0.3.min.js'>"+"<"+"script>");
-    </script>
-<!-- <![endif]-->
-
-<!--[if IE]>
-    <script type="text/javascript">
-        window.jQuery || document.write("<script src='__ADMIN_ACEADMIN__/js/jquery-1.10.2.min.js'>"+"<"+"script>");
-    </script>
-<![endif]-->
-
-<script type="text/javascript">
-    if("ontouchend" in document) document.write("<script src='__ADMIN_ACEADMIN__/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
-</script>
-<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/typeahead-bs2.min.js"></script>
-<!-- page specific plugin scripts -->
-
-<!--[if lte IE 8]>
-  <script src="__ADMIN_ACEADMIN__/js/excanvas.min.js"></script>
-<![endif]-->
-<script src="__ADMIN_ACEADMIN__/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/jquery.ui.touch-punch.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/jquery.slimscroll.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/jquery.easy-pie-chart.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/jquery.sparkline.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/flot/jquery.flot.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/flot/jquery.flot.pie.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/flot/jquery.flot.resize.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/ace-elements.min.js"></script>
-<script src="__ADMIN_ACEADMIN__/js/ace.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    // 导航点击事件
-    $('.b-nav-li').click(function(event) {
-        $('.active').removeClass('active');
-        var ulObj=$(this).parents('.b-has-child').eq(0);
-        $(this).addClass('active');
-        // alert(2);
-        if(ulObj.length!=0){
-            $(this).parents('.b-has-child').eq(0).addClass('active');
-        }
-    });
-    // 动态调整iframe的高度以适应不同高度的显示器
-    $('.page-content,.main-content').height($(window).height());
-    $('.page-content').css('padding-bottom',50);
-
-    // 左侧菜单自动适应高度
-    $('#sidebar .nav-list').height($(window).height());
-})
-</script>
 </body>
-</html>
 
+</html>

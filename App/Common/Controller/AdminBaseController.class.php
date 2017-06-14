@@ -24,12 +24,12 @@ class AdminBaseController extends BaseController {
                 }
             }
 
-            $auth=new \Think\Auth();
+            // $auth=new \Think\Auth();
             
-            $result=$auth->check($action,$_SESSION['user']['id']);
-            if(!$result){
-                $this->error('您没有权限访问',U('admin/index/welcome'));
-            }
+            // $result=$auth->check($action,$_SESSION['user']['id']);
+            // if(!$result){
+            //     $this->error('您没有权限访问',U('admin/index/welcome'));
+            // }
 
         }
         
