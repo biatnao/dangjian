@@ -64,7 +64,7 @@
     <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
     <script type="text/javascript">
     var login = function(){
-        var url = "index.php?m=admin&c=index&a=login";//"{:U('Admin/index/login')}";
+        var url = "/index.php?m=admin&c=index&a=login";//"{:U('Admin/index/login')}";
         var username = $('input[name=username]').val();
         var pwd = $('input[name=pwd]').val();
         var data = { 'username':username , 'pwd':pwd };
