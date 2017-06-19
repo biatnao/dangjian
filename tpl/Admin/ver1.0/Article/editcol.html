@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>后台主页</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><small><?php echo $col['id']?'编辑':'添加'; ?>栏目</small></h5>
+                        <div class="ibox-tools">
+                            
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="get" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">栏目名称</label>
+
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="name" value="<?php echo $col['name']; ?>">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">类型</label>
+
+                                <div class="col-sm-5">
+                                    <select class="form-control m-b" name="type">
+                                        <option value="1" <?php echo $col['type']==1?'selected':''; ?> >普通文章</option>
+                                        <option value="2" <?php echo $col['type']==2?'selected':''; ?>>问题</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="button" onclick="editcol(<?php echo $col['id']; ?>)">保存</button>
+                                    <button class="btn btn-white" type="button">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script type="text/javascript">
+    var editcol = function( id = 0 ){
+        var url = 'index.php?m=admin&c=article&a=editcol';
+        var name = $('input[name=name]').val();
+        var type = $('select[name=type]').val();
+        var data = {
+            'id':id,
+            'name':name,
+            'type':type
+        }
+        $.post(url ,data ,function(res){
+            if(res.code == 0){
+                layer.msg(res.msg, function(){
+                        location.href = 'index.php?m=admin&c=article&a=collist';
+                    });
+            }else{
+                layer.alert(res.msg);
+            }
+        } , 'json');
+    }
+</script>
+</body>
+
+</html>

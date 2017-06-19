@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>权限列表</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .ibox-title{
+            padding: 14px 15px 44px;
+        }
+        .ibox-title h5{
+            font-size: 24px;
+            margin: 3px 0 2px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>权限管理</h5>
+                    <div class="ibox-tools">
+                    </div>
+                </div>
+                <div class="ibox-content">
+			        <div id="treeview" class="test"></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+                </button>
+                <small class="font-bold">权限操作
+            </div>
+            <div class="modal-body">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs" id='rulemenu'>
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">添加子权限</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">修改权限</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                            <input type="hidden" name="pid" value="0">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">权限名</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="rule_name" value="<?php echo $art['title']; ?>">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">权限</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="rule" value="<?php echo $art['title']; ?>">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                            <input type="hidden" name="id" value="0">
+                            <div class="form-group">
+                                    <label class="col-sm-2 control-label">权限名</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="rule_name" value="<?php echo $art['title']; ?>">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">权限</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="rule" value="<?php echo $art['title']; ?>">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+	            <button type="button" style="float: left;" class="btn btn-danger" onclick="delrule()">删除权限</button>
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="editrule()">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="__PUBLIC__/statics/hplus/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/statics/hplus/js/treeview/bootstrap-treeview.js"></script>
+    <!-- layer -->
+    <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    	init();
+    	$('#myModal').on('hide.bs.modal', function () {
+    		clearmodal();
+    	})
+    })
+    var init = function(){
+        var url = "index.php?m=admin&c=rule&a=ruleindex";//"{:U('Admin/index/login')}";
+        var data = {  };
+        $.post(url , data , function( res ){
+            if( res.code === 0 ){
+            	console.log(res.list);
+                $('#treeview').treeview({
+                        data: res.list,
+                        showTags: true,
+                        onNodeSelected: function (event, node) {
+                        	console.log(node);
+                        	$('#myModal').modal();
+                        	$('input[name=id]').val(node.id);
+                        	$('input[name=pid]').val(node.id);
+                        	$('input[name=rule_name]').eq(1).val(node.text);
+                        	$('input[name=rule]').eq(1).val(node.name);
+				        }
+                    });
+            }else{
+                layer.alert(res.msg);
+                return false;
+            }
+            
+        } , 'json');
+    }
+    var clearmodal = function(){
+		$('input[name=id]').val(0);
+		$('input[name=pid]').val(0);
+		$('#tab-1').removeClass('active').addClass('active');
+		$('#tab-2').removeClass('active');
+		$('#rulemenu li').eq(0).removeClass('active').addClass('active').children('a').attr('aria-expanded' , 'true');
+		$('#rulemenu li').eq(1).removeClass('active').children('a').attr('aria-expanded' , 'false');
+    }
+    var editrule = function(){
+    	var url = 'index.php?m=admin&c=rule&a=editrule';
+    	var data = {};
+    	var isnull = false;
+    	$(".tab-content .active input").each(function( e , i ){
+    	    if( $.trim(i.value)=='' ){
+    	    	isnull = true;
+    	    }
+    	    data[i.name] = i.value;
+    	  });
+    	if( isnull ){
+    		layer.alert('名称或权限不能为空');
+	    	return false;
+    	}
+    	console.log(data)
+        $.post(url , data , function( res ){
+            if( res.code === 0 ){
+            	// console.log(res.list);
+            	layer.msg(res.msg, function(){
+            	        window.location.reload();
+            	    });
+            }else{
+                layer.alert(res.msg);
+                return false;
+            }
+            
+        } , 'json');
+    }
+    var delrule = function(){
+		var url = 'index.php?m=admin&c=rule&a=delrule';
+		var id = $('input[name=id]').val();
+		var data = {'id':id};
+	    $.post(url , data , function( res ){
+	        if( res.code === 0 ){
+	        	// console.log(res.list);
+	        	layer.msg(res.msg, function(){
+	        	        window.location.reload();
+	        	    });
+	        }else{
+	            layer.alert(res.msg);
+	            return false;
+	        }
+	        
+	    } , 'json');
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>文章列表</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .ibox-title{
+            padding: 14px 15px 44px;
+        }
+        .ibox-title h5{
+            font-size: 24px;
+            margin: 3px 0 2px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>文章管理</h5>
+                    <div class="ibox-tools">
+                        <button type="button" class="btn btn-outline btn-success" onclick="editart()">添加文章</button>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>文章名称</th>
+                                <th>栏目</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach($col as $k => $v){?>
+                            <tr>
+                                <td width="10%"><?php echo $k+1;?></td>
+                                <td width="25%"><?php echo $v['title'];?></td>
+                                <td width="25%"><?php echo $v['colname'];?></td>
+                                <td width="40%">
+                                <button class="btn btn-info " type="button" onclick="editart(<?php echo $v['id'];?>)"><i class="fa fa-paste"></i> 编辑</button>
+                                <button class="btn btn-warning " type="button" onclick="delart(<?php echo $v['id'];?>)"><i class="fa fa-times"></i> 删除</button>
+                                </td>
+                            </tr>
+                        <?php }?>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script type="text/javascript">
+    var delart = function( id = 0 ){
+        var url = '/index.php?m=admin&c=article&a=delart';
+        var data = {
+            'id':id
+        }
+        $.post(url ,data ,function(res){
+            if(res.code == 0){
+                layer.msg(res.msg, function(){
+                        window.location.reload();
+                    });
+            }else{
+                layer.alert(res.msg);
+            }
+        } , 'json');
+    }
+    var editart = function( id = 0 ){
+        var url = '/index.php?m=admin&c=article&a=editart&id='+id;
+        location.href = url;
+    }
+</script>
+</body>
+
+</html>

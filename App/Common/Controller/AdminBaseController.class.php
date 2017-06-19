@@ -2,6 +2,8 @@
 namespace Common\Controller;
 use Common\Controller\BaseController;
 class AdminBaseController extends BaseController {
+    
+    public static $service = [];
 
     public function _initialize(){
         parent::_initialize();
@@ -33,6 +35,15 @@ class AdminBaseController extends BaseController {
 
         }
         
+    }
+
+    public function getService( $name = '' ){
+        if( empty($name) ) return false;
+        $name = ucfirst(strtolower($name));
+        if( !isset($this->service[$name]) || empty($this->service[$name]) ){
+            self::$service[$name] = D( $name , 'Service' );
+        }
+        return self::$service[$name];
     }
 
 }

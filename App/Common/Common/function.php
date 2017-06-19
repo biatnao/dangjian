@@ -36,7 +36,7 @@ function app_upload_image($path,$maxSize=52428800){
     $path=trim($path,'.');
     $path=trim($path,'/');
     $config=array(
-        'rootPath'  =>'./',         //文件上传保存的根路径
+        'rootPath'  =>'Public/statics',         //文件上传保存的根路径
         'savePath'  =>'./'.$path.'/',   
         'exts'      => array('jpg', 'gif', 'png', 'jpeg','bmp'),
         'maxSize'   => $maxSize,
@@ -864,6 +864,11 @@ function tp_return(){
     $args = func_get_args();
     if($nums == 1){
         $returnArray = $args[0];
+    }elseif($nums == 2){
+        $returnArray = array(
+            'code'=>$args[0],
+            'msg'=>$args[1],
+        );
     }elseif($nums == 3){
         $returnArray = array(
             'code'=>$args[0],
@@ -887,4 +892,10 @@ function tp_return(){
         );
     }
     return $returnArray;
+}
+
+function generatepwd( $pwd ){
+    $salt=base64_encode(mcrypt_create_iv(32,MCRYPT_DEV_RANDOM));
+    $pwd=sha1($pwd.$salt); 
+    return [$pwd,$salt];
 }

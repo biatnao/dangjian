@@ -36,26 +36,6 @@ class IndexController extends AdminBaseController {
 		}
     }
 
-    public function register(){
-		if( IS_AJAX ){
-			$username = I('username');
-			$pwd = I('pwd');
-			
-			$indexObj = $this->getService('index');
-			$param = [
-				'username'=>$username,
-				'pwd'=>$pwd,
-			];
-			$ret = $indexObj->register( $param );
-			unset($indexObj);
-
-			echo json_encode( $ret );
-			exit;
-		}else{
-			$this->display();
-		}
-    }
-
     public function index(){
 		$this->display();
     }
