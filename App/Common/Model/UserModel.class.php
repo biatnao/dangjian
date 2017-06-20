@@ -3,8 +3,6 @@ namespace Common\Model;
 
 class UserModel extends BaseModel {
 
-    protected $tableName = 'user';
-
     public function adminlist(){
         $admin = M('AuthGroupAccess a')
         ->field('b.id,b.name,group_concat(c.title) AS groupname')
@@ -56,9 +54,16 @@ class UserModel extends BaseModel {
         return $bool;
     }
 
+    public function userlist(  $where ){
+        return $this->where($where)->order('create_time desc')->select();
+    }
 
-    
+    public function updateUser(  $map , $data ){
+        return $this->saveData( $map , $data );
+    }
 
-
+    public function getuser( $where ){
+        return $this->where($where)->find();
+    }
 
 }

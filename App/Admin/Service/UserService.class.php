@@ -74,5 +74,52 @@ class UserService extends BaseService{
         return tp_return( 0 , 'ok' , $admin );
     }
 
+    public function userlist( $param=[] ){
+        $where = [];
+        if( !empty($param['name']) ){
+            $where['name|nickname'] = ['like','%'.$param['name'].'%'];
+        }
+        if( !empty($param['status']) ||  $param['status'] === '0' ){
+            $where['status'] = $param['status'];
+        }
+        $userObj = $this->getModel('user');
+        $admin = $userObj->userlist( $where );
+        unset($userObj);
+        return tp_return( 0 , 'ok' , $admin );
+    }
+
+    public function checkuser( $param=[] ){
+        $user_id = $param['user_id'];
+        $status = $param['status'];
+        if( empty($user_id) ){
+            return tp_return( -1 , '请选择用户' );
+        }
+        $map = [
+            'id'=>$user_id,
+        ];
+        $data = [
+            'status'=>$status,
+        ];
+        $userObj = $this->getModel('user');
+        $ret = $userObj->updateUser( $map , $data );
+        unset($userObj);
+
+        return tp_return( 0 , 'ok' , $ret );
+    }
+
+    public function getuser( $param=[] ){
+        $user_id = $param['id'];
+        if( empty($user_id) ){
+            return tp_return( -1 , '请选择用户' );
+        }
+        $where = [
+            'id'=>$user_id,
+        ];
+        $userObj = $this->getModel('user');
+        $user = $userObj->getuser( $where );
+        unset($userObj , $user['pwd'] );
+
+        return tp_return( 0 , 'ok' , $user );
+    }
 
 }

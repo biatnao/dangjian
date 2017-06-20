@@ -6,9 +6,11 @@ class UserController extends AdminBaseController{
 
     public function userlist(){
     	$status = I( 'status' );
+    	$name = I( 'name' );
 
     	$param = [
     	'status'=>$status,
+    	'name'=>$name,
     	];
 
 		$userObj = $this->getService('user');
@@ -16,6 +18,8 @@ class UserController extends AdminBaseController{
 		unset($userObj);
 
 		$this->assign('user',$user['list']);
+		$this->assign('status',$status);
+		$this->assign('name',$name);
 		$this->display();
 		// echo json_encode( $ret );
 		// exit;
@@ -40,6 +44,20 @@ class UserController extends AdminBaseController{
 			echo json_encode( tp_return(-1 , 'bad request') );
 			exit;
 		}
+    }
+
+    public function getuser(){
+    	$id = I( 'id' );
+
+    	$param = [
+    	'id'=>$id,
+    	];
+
+		$userObj = $this->getService('user');
+		$user = $userObj->getuser($param);
+		unset($userObj);
+		$this->assign('user',$user['list']);
+		$this->display();
     }
 
     public function adminlist(){

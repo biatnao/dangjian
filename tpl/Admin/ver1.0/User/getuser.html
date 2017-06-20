@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>文章管理</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0.2" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>个人资料</h5>
+                    </div>
+                    <div>
+                        <div class="ibox-content no-padding border-left-right">
+                            <img alt="image" class="img-responsive" src="__PUBLIC__/statics/hplus/img/profile_big.jpg">
+                        </div>
+                        <div class="ibox-content profile-content">
+                            <h4><strong><?php echo $user['name']; ?></strong>
+                            <?php if($user['status']==1){?>
+                            <button type="button" class="btn btn-primary btn-sm" style="margin-left:10px;padding: 1px 7px;">
+                               已审核
+                            </button>
+                            <?php }elseif($user['status']==2){?>
+                            <button type="button" class="btn btn-warning btn-sm" style="margin-left:10px;padding: 1px 7px;">
+                                审核中
+                            </button>
+                            <?php }else{?>
+                            <button type="button" class="btn btn btn-default  btn-sm" style="margin-left:10px;padding: 1px 7px;">
+                                未审核
+                            </button>
+                            <?php }?>
+
+
+
+                            </h4>
+                            <p>编号：<?php echo $user['idcard']; ?></p>
+                            
+                            <div class="row m-t-lg">
+                                
+                            </div>
+                            <div class="user-button">
+                                <!-- <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> 发送消息</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-default btn-sm btn-block"><i class="fa fa-coffee"></i> 赞助</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            <button type="button" class="btn btn-primary btn-sm" onclick="back()" >
+               返回
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script type="text/javascript">
+    var back = function(){
+        window.history.go(-1);
+    }
+</script>
+</body>
+
+</html>
