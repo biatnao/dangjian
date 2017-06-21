@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>轮播图列表</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/js/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .ibox-title{
+            padding: 14px 15px 44px;
+        }
+        .ibox-title h5{
+            font-size: 24px;
+            margin: 3px 0 2px;
+        } 
+        .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+            height: "100px";
+        }
+        
+    </style>
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title" style="margin-bottom: 20px">
+                    <h5>轮播图管理</h5>
+                    <div class="ibox-tools">
+                        <button type="button" class="btn btn-outline btn-success" onclick="editbanner()">添加轮播图</button>
+                    </div>
+                </div>
+                <?php foreach($banner as $item){ ?>
+                    <div class="col-sm-4">
+                        <div class="ibox-content no-padding border-left-right">
+                        <a class="fancybox" href="<?php echo empty($item['imgurl'])?'javascript:;':'__PUBLIC__/statics/'.$item['imgurl']; ?>" title="">
+                            <img class="img-responsive" src="__PUBLIC__/statics/<?php echo $item['imgurl']; ?>" style="height: 200px;
+    width: 100%;" alt="图片失踪了">
+    </a>
+                        </div>
+                        <div class="ibox-content profile-content">
+                            <h4><strong><?php echo $item['linkurl']; ?></strong>
+                            </h4>
+                            <div class="row m-t-lg">
+                            </div>
+                            <div class="user-button">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-sm btn-block" onclick="editbanner(<?php echo $item['id']; ?>)"><i class="fa fa-envelope"></i> 编辑</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-default btn-sm btn-block" onclick="deletebanner(<?php echo $item['id']; ?>)"><i class="fa fa-coffee"></i>删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script src="__PUBLIC__/statics/hplus/js/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'none',
+            closeEffect: 'none'
+        });
+    });
+    var deletebanner = function( id = 0 ){
+        var url = '/index.php?m=admin&c=article&a=deletebanner';
+        var data = {
+            'id':id
+        }
+        $.post(url ,data ,function(res){
+            if(res.code == 0){
+                layer.msg(res.msg, function(){
+                        window.location.reload();
+                    });
+            }else{
+                layer.alert(res.msg);
+            }
+        } , 'json');
+    }
+    var editbanner = function( id = 0 ){
+        var url = '/index.php?m=admin&c=article&a=editbanner&id='+id;
+        location.href = url;
+    }
+</script>
+</body>
+
+</html>

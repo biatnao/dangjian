@@ -894,8 +894,56 @@ function tp_return(){
     return $returnArray;
 }
 
+/**
+ *  生成密码
+ * @return true / array /object
+ */
 function generatepwd( $pwd ){
     $salt=base64_encode(mcrypt_create_iv(32,MCRYPT_DEV_RANDOM));
     $pwd=sha1($pwd.$salt); 
     return [$pwd,$salt];
+}
+
+/**
+ *
+ * @param $name 变量的名称
+ *          支持指定类型
+ * @param $default 不存在的时候默认值
+ * @return true / array /object
+ */
+function ihttp_get($url = '') {
+    return ihttp_request ( $url );
+}
+
+function ihttp_post($url = '', $data = null) {
+    $headers = array (
+            'Content-Type' => 'application/x-www-form-urlencoded'
+    );
+    return ihttp_request ( $url, $data );
+}
+/**
+ * 接口请求数据传输
+ * @param $url 接口请求url
+ * @param $data post请求数据
+ * @return true / array /object/string
+ */
+function ihttp_request($url, $data = null) {
+    $curl = curl_init ();
+    curl_setopt ( $curl, CURLOPT_URL, $url );
+    curl_setopt ( $curl, CURLOPT_SSL_VERIFYPEER, FALSE );
+    curl_setopt ( $curl, CURLOPT_SSL_VERIFYHOST, FALSE );
+    if (! empty ( $data )) {
+        curl_setopt ( $curl, CURLOPT_POST, 1 );
+        curl_setopt ( $curl, CURLOPT_POSTFIELDS, $data );
+    }
+    curl_setopt ( $curl, CURLOPT_RETURNTRANSFER, 1 );
+    $output = curl_exec ( $curl );
+    // 检查是否有错误发生
+    if(curl_errno($curl)){
+        echo 'Curl error: ' . curl_error($curl);
+        exit;
+    }
+    curl_close ( $curl );
+
+    return $output;
 }

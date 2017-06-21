@@ -164,5 +164,49 @@ class ArticleService {
         return tp_return( 0 , 'ok' , $bool );
     }
 
+    public function bannerlist(){
+        $artObj = $this->getModel('article');
+        $banner = $artObj->bannerlist( );
+        unset($artObj);
+        return tp_return( 0 , 'ok' , $banner );
+    }
 
+    public function editbanner( $param ){
+        $id = $param['id'];
+        extract($param);
+        $artObj = $this->getModel('article');
+        $data = [
+        'linkurl'=>$linkurl,
+        'imgurl'=>$imgurl,
+        ];
+
+        if( !empty($id) ){
+            $bool = $artObj->editbanner( $id , $data );
+        }else{
+            $bool = $artObj->addbanner( $data );
+        }
+        unset($artObj);
+
+        return tp_return( 0 , '操作成功' , $bool );
+    }
+
+    public function deletebanner( $param ){
+        $id = $param['id'];
+
+        $artObj = $this->getModel('article');
+        $bool = $artObj->deletebanner(['id'=>$id]);
+        unset($artObj);
+
+        return tp_return( 0 , '删除成功' , $bool );
+    }
+
+    public function getbanner( $param=[] ){
+        $id = $param['id'];
+
+        $artObj = $this->getModel('article');
+        $banner = $artObj->getbanner(['id'=>$id]);
+        unset($artObj);
+
+        return tp_return( 0 , 'ok' , $banner );
+    }
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>轮播图管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/font-awesome.css?v=4.4.1" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/style.css?v=4.1.0.2" rel="stylesheet">
+    <style type="text/css">
+        .ibox-title{
+            padding: 14px 15px 44px;
+        }
+        .ibox-title h5{
+            font-size: 24px;
+            margin: 3px 0 2px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><small><?php echo $banner['id']?'编辑':'添加'; ?>轮播图</small></h5>
+                        <div class="ibox-tools">
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post"  action="/index.php?m=admin&c=article&a=editbanner" class="form-horizontal" enctype="multipart/form-data" id="bannerform">
+                            <input type="hidden" name="id" value="<?php echo $banner['id']; ?>">
+                            
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">图片地址</label>
+
+                                <div class="col-sm-5" id="file-pretty">
+                                    <input type="file" class="form-control" name='imgurl'>
+                                </div>
+                            </div>
+                            <?php if($banner['imgurl']){ ?>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label"></label>
+                                <div class="col-sm-4 ">
+                                    <img width="150px" height="100px" src="__PUBLIC__/statics/<?php echo $banner['imgurl']; ?>"/>
+                                </div>
+                            </div>
+                            <?php }?>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">链接地址</label>
+
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="linkurl" value="<?php echo $banner['linkurl']; ?>">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="button" onclick="editbanner()">保存</button>
+                                    <button class="btn btn-white" type="button">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script src="__PUBLIC__/statics/hplus/js/prettyfile/bootstrap-prettyfile.js"></script>
+<script type="text/javascript">
+    $( '#file-pretty input[type="file"]' ).prettyFile();
+
+    var editbanner = function( ){
+        document.getElementById("bannerform").submit();
+    }
+</script>
+</body>
+
+</html>

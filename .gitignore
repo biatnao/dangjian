@@ -1,10 +1,14 @@
 
-Runtime/Logs/
-Runtime/Cache/Admin/225c9b8d00250407b035c0505afb6907.php
-Runtime/Cache/Admin/225c9b8d00250407b035c0505afb6907.php
-Runtime/Cache/Admin/225c9b8d00250407b035c0505afb6907.php
-Runtime/Cache/Admin/225c9b8d00250407b035c0505afb6907.php
-Runtime/Cache/Admin/225c9b8d00250407b035c0505afb6907.php
-Runtime/Cache/Admin/b62ac7d605a0da97bdbb1b2000c8870d.php
-Runtime/Cache/Admin/cac0817c9417af7b60cbae9193bb41bd.php
-Runtime/Cache/Admin/ef9b285f22b21e126f6d006fddd10870.php
+Runtime/Logs/*
+Public/statics/article/*
+Runtime/Cache/*
+Runtime/Data/*
+Runtime/Data/_fields/dangjian.dj_user.php
+Runtime/Data/_fields/dangjian.dj_user.php
+Public/statics/banner/2017-06-22/594ab52509a7f.jpg
+Public/statics/banner/2017-06-22/594ab5f628e58.jpg
+Public/statics/banner/2017-06-22/594ab6259633a.jpg
+Public/statics/banner/2017-06-22/594ab9d2f272e.jpg
+Public/statics/banner/2017-06-22/594aba653a363.jpg
+Public/statics/banner/2017-06-22/594aba70c48e8.jpg
+Public/statics/banner/2017-06-22/594aba7dd883d.jpg

@@ -134,5 +134,38 @@ class ArticleModel extends BaseModel{
         return $bool;
     }
 
+    public function bannerlist( $param = [] ){
+        $banner = M('banner')->order('sort,id')->select();
+        return $banner;
+    }
 
+    public function addbanner( $param ){
+        $data = [
+            'imgurl'=>$param['imgurl'],
+            'linkurl'=>$param['linkurl'],
+        ];
+
+        $banner = M('banner')->add($data);
+        return $banner;
+    }
+
+    public function editbanner( $id = '' , $param = [] ){
+        $data = [
+            'imgurl'=>$param['imgurl'],
+            'linkurl'=>$param['linkurl'],
+        ];
+
+        $bool = M('banner')->where(['id' => $id])->save($data);
+        return $bool;
+    }
+
+    public function deletebanner( $param ){
+        $bool = M('banner')->delete($param['id']);
+        return $bool;
+    }
+
+    public function getbanner( $param ){
+        $banner = M('banner')->find($param['id']);
+        return $banner;
+    }
 }

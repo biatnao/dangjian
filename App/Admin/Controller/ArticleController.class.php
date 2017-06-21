@@ -165,6 +165,72 @@ class ArticleController extends AdminBaseController{
 		}
     }
 
+    public function bannerlist(){
+    	if( IS_GET ){
+			$artObj = $this->getService('article');
+			$ret = $artObj->bannerlist();
+			unset($artObj);
+
+			$this->assign('banner',$ret["list"]);
+			$this->display();
+		}else{
+			return tp_return( -1 , '错误请求');
+		}
+    }
+
+    public function editbanner(){
+		$id = I( 'id' , 0 );
+		$artObj = $this->getService('article');
+    	if( IS_POST ){
+			$linkurl = I( 'linkurl' );
+			$filedata = app_upload_image('banner');
+			$imgurl = $filedata[0];
+
+			$param = [
+				'linkurl'=>$linkurl,
+				'imgurl'=>$imgurl,
+				'id'=>$id,
+			];
+			$ret = $artObj->editbanner( $param );
+			unset($artObj);
+			if( $ret['code'] == 0 ){
+				$this->success('操作成功', 'Admin/Article/bannerlist');
+			}else{
+				$this->error('操作失败');
+			}
+		}else{
+			if( !empty($id) ){
+				$param = [
+				'id'=>$id
+				];
+				$ret = $artObj->getbanner( $param );
+				unset($artObj);
+				$this->assign('banner',$ret['list']);
+			}
+			$this->display();
+		}
+    }
+
+    public function deletebanner(){
+    	if( IS_AJAX ){
+			$id = I( 'id' , 0 );
+			
+			if( empty($id) ){
+				return tp_return( -2 , '请选择轮播图');
+			}
+			$artObj = $this->getService('article');
+			$param = [
+				'id'=>$id,
+			];
+			$ret = $artObj->deletebanner( $param );
+			unset($artObj);
+
+			echo json_encode( $ret );
+			exit;
+		}else{
+			return tp_return( -1 , '错误请求');
+		}
+    }
 
 
 }
