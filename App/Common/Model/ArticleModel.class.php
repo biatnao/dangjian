@@ -70,7 +70,7 @@ class ArticleModel extends BaseModel{
         $data = [
             'title'=>$param['title'],
             'column_id'=>$param['column_id'],
-            'intro'=>substr($param['content_text'], 0 , 100 ),
+            'intro'=>mb_substr($param['content_text'], 0 , 100 ,"utf-8"),
             'cover'=>$param['cover'],
             'question_id'=>$param['question_id'],
             'content'=>$content,
@@ -78,7 +78,7 @@ class ArticleModel extends BaseModel{
         ];
 
     	$bool = $this->where(['id' => $id])->save($data);
-
+        
     	$content = ['content'=>$param['content']];
     	$bool = M('ArticleContent')->where(['article_id' => $id])->save($content);
 

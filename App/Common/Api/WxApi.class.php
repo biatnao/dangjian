@@ -1,5 +1,5 @@
 <?php
-namespace Wx\Api;
+namespace Common\Api;
 use Wechat\Wechat;
 
 class WxApi{

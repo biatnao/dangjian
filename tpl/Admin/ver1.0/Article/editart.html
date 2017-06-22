@@ -60,13 +60,14 @@
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">文章封面</label>
+                                <input type="hidden" class="form-control" name='oldcover' value="{$art['cover']}">
 
                                 <div class="col-sm-5" id="file-pretty">
-                                    <input type="file" class="form-control" name='cover'>
+                                    <input type="file" class="form-control" name='cover' onchange="onupload()">
                                 </div>
                             </div>
                             <?php if($art['cover']){ ?>
-                            <div class="form-group">
+                            <div class="form-group" id="oldcover">
                                 <label class="col-sm-1 control-label"></label>
                                 <div class="col-sm-4 ">
                                     <img width="150px" height="100px" src="__PUBLIC__/statics/<?php echo $art['cover']; ?>"/>
@@ -88,7 +89,7 @@
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
                                     <button class="btn btn-primary" type="button" onclick="editart()">保存</button>
-                                    <button class="btn btn-white" type="button">取消</button>
+                                    <button class="btn btn-white" type="button" onclick="back()">取消</button>
                                 </div>
                             </div>
                         </form>
@@ -123,6 +124,12 @@
         $('textarea[name=content]').val(content);
         $('textarea[name=content_text]').val(content_text);
         document.getElementById("artform").submit();
+    }
+    var onupload = function(){
+        $("#oldcover").hide();
+    }
+    var back = function(){
+        window.history.go(-1)
     }
 </script>
 </body>

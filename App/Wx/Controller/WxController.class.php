@@ -19,10 +19,16 @@ class WxController extends BaseController {
      */
     public function valid(){
     	self::$api->valid();
+        $json = json_encode($_POST);
+        Log::init([
+            'type'  =>  'File',
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/event'
+        ]);
+        Log::write($res,'event');
     }
 
     public function gettoken(){
-        return 'NgnMnQuGwZNFRrELPY7uNC5SOChy9OOA9mqXNohzPIqkJKHSMnBPGo6W0Pg0PzJSgOVwwzq16OvrXW_L7nuH49GAluKukJFPIGpBl4bIoNCHGxPzkbqo3LFgcLxD42VVOFJdAGAULP';
+        return '_ds6sl1SKNeef1crEJTfTxDRQtyehObQ08MC8AaK9uApR238_MEDrPnbJPch9WL72ED-08CyhMiOM5IEcHmyBT0pQzD4pbUwIL0WkqQGPTkBK7Ea5tXbmqu8p5rPGnnJHPQcAFABJK';
         $appid = 'wxb50f43adbb92f1c7';
         $secret = 'd3dd76c8451bf23633ca589dd0a481c3';
         $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appid}&secret={$secret}";
@@ -81,4 +87,8 @@ class WxController extends BaseController {
         exit;
     }
 
+
+    public function getuser(){
+
+    }
 }

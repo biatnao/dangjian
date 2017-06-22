@@ -108,8 +108,9 @@ class ArticleController extends AdminBaseController{
 			$question_id = I( 'question_id' );
 			$content = I( 'content' , '' , 'htmlspecialchars' );
 			$content_text = I( 'content_text' );
+			$old_cover = I( 'oldcover' , '' );
 			$filedata = app_upload_image('article');
-			$cover = $filedata[0];
+			$cover = $filedata[0] ? $filedata[0]:$old_cover;
 
 			$param = [
 				'title'=>$title,

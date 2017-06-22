@@ -20,23 +20,39 @@
         .mui-table-view-cell a img{
             width:50px;
             height: 50px;
-            margin: 20px 8px;
+            margin: 2px 8px 2px 0px;
         }
         .mui-table-view{
             margin-top: -14px;
         }
         .mui-table-view .mui-media-object {
             line-height: 50px;
-            max-width: 50px;
-            height: 50px;
+            max-width: 50%;
+            height: 80px;
+            width: 100px;
         }
         .mui-media-body{
             height: 80px;
-            padding: 20px 5px;
+            padding: 4px 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .mui-media-body p{
             margin-top: 5px;
         }
+        .mui-ellipsis-2 
+        { 
+            display: -webkit-box; /*将对象作为弹性伸缩盒子模型显示*/ 
+            overflow: hidden; 
+         
+            white-space: normal !important; 
+            text-overflow: ellipsis; 
+            word-wrap: break-word; 
+         
+            -webkit-line-clamp: 2; /*限制在一个块元素显示的文本的行数*/ 
+            -webkit-box-orient: vertical; /*设置或检索伸缩盒对象的子元素的排列方式*/ 
+        } 
+
     </style>
 </head>
 
@@ -56,11 +72,11 @@
     <ul class="mui-table-view">
     <?php foreach($art as $item){?>
         <li class="mui-table-view-cell mui-media">
-            <a href="javascript:;">
-                <img class="mui-media-object mui-pull-left" src="__PUBLIC__/statics/<?php echo $item['cover'];?>">
+            <a href="/index.php?m=home&c=index&a=getarticle&id=<?php echo $item['id'];?>">
+                <img class="mui-media-object mui-pull-left" src="__PUBLIC__/statics<?php echo $item['cover'];?>">
                 <div class="mui-media-body">
                     <?php echo $item['title'];?>
-                    <p class='mui-ellipsis'><?php echo $item['intro'];?></p>
+                    <p class='mui-ellipsis-2'><?php echo $item['intro'];?></p>
                 </div>
             </a>
         </li>
