@@ -18,13 +18,30 @@ class WxController extends BaseController {
      * @return boolean 是否登录
      */
     public function valid(){
-    	self::$api->valid();
-        $json = json_encode($_POST);
-        Log::init([
+      Log::init([
             'type'  =>  'File',
-            'path'  =>  RUNTIME_PATH.'Logs/Wx/event'
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/'
         ]);
-        Log::write($res,'event');
+    	// self::$api->valid();
+      Log::write('开始调用','event');
+      $postStr = file_get_contents("php://input");
+      Log::write($postStr,'event');
+      if (!empty($postStr)) {
+        $receive = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+        // $str=json_encode($receive);
+        $receice_arr = get_object_vars($receive);
+
+        // foreach ($receice_arr as $key => $value) {
+        // Log::write($key.":".$value,'data');
+        // }
+        if( $receice_arr[''] ){
+        }
+      }else{
+        Log::write('获取数据为空','event');
+      }
+      if( empty($receive) ){
+        Log::write('转化为空','event');
+      }
     }
 
     public function gettoken(){
