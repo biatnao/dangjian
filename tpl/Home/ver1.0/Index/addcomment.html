@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>评论</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/mui.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/weui.min.css" rel="stylesheet" >
+    <style type="text/css">
+      .page_da{ padding: 10px 10px 10px 15px; }
+      .page_da h1{ font-size:20px; font-weight: bold;color: #585858; }
+      .wxy_margin0{ margin-top:0px!important; }
+    </style>
+</head>
+<body  ontouchstart="">
+  <!-- <div class="page_da">
+    <h1></h1> 
+  </div> -->
+  <div class="weui_cells weui_cells_form wxy_margin0">
+    <div class="weui_cell">
+    <input name='id' type="hidden" value="{$id}" />
+      <div class="weui_cell_bd weui_cell_primary">
+        <textarea id="textarea" class="weui_textarea" name="content" placeholder="请填写评论" rows="5" ></textarea>
+        <div class="wxy_textarea_counter">
+          <!-- <div class="saytexta"  name='saytext' id='saytext'><i class='icon iconfont fs-smaller emotion'>&#xe617;</i></div> -->
+          <span id="count" class="count_aa">0</span><span class="count_aa">/</span><span id="count_max" class="count_aa">50</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bd spacing">
+    <a href="javascript:addcomment()" class="weui_btn weui_btn_primary">提交</a>
+  </div>
+  <div id='qqfacebox'></div>
+  <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+  <script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="__PUBLIC__/statics/hplus/js/mui.min.js?v=3.3.6"></script>
+  <script>
+  $(function(){
+    var max = $('#count_max').text();
+    $('#textarea').on('input', function(){ 
+     var text = $(this).val();
+     var len = text.length;   
+     $('#count').text(len);    
+     if(len > max){
+       $(this).closest('.weui_cell').addClass('weui_cell_warn');
+     }
+     else{
+       $(this).closest('.weui_cell').removeClass('weui_cell_warn');
+     }     
+   });
+  })
+var addcomment = function(){
+  var content = $("textarea.weui_textarea").val();
+  var id = $("input[name=id]").val();
+  if($.trim(content) == '' || $.trim(content) == null ){
+    alert("评论内容不能为空！");
+    return false;
+  }
+  if( content.length > 50 ){
+    alert("评论内容不能超过50字！");
+    return false;
+  }
+  var url = "{:U('home/index/addcomment')}";
+  var data = { 'id' : id , 'content' : content };
+  $.post( url , data , function( res ){
+    console.log(res);
+    if( res.code == 0 ){
+      mui.toast("评论成功");
+      setTimeout( function(){
+        location.href = "{:U('home/index/getarticle' , array('id'=>$id))}"
+      } , 1000 )
+    }else{
+      mui.toast(res.msg);
+      return false;
+    }
+  } , ' json' );
+}
+  </script>
+</body>
+
+</html>
+

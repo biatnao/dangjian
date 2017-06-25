@@ -34,20 +34,22 @@ class ArticleController extends AdminBaseController{
     public function editcol(){
 		$id = I( 'id' , 0 );
 		$artObj = $this->getService('article');
-    	if( IS_AJAX ){
+    	if( IS_POST ){
 			$name = I( 'name' );
 			$type = I( 'type' );
-			
+			$old_cover = I( 'oldcover' , '' );
+			$filedata = app_upload_image('article');
+			$cover = $filedata[0] ? $filedata[0]:$old_cover;
+
 			$param = [
 				'name'=>$name,
 				'type'=>$type,
+				'cover'=>$cover,
 				'id'=>$id,
 			];
 			$ret = $artObj->editcol( $param );
 			unset($artObj);
-
-			echo json_encode( $ret );
-			exit;
+			$this->success( '编辑成功' , 'admin/article/collist' );
 		}else{
 			if( !empty($id) ){
 				$col = $artObj->getcol( $id );

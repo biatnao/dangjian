@@ -17,6 +17,8 @@ class ArticleModel extends BaseModel{
     	$data = [
             'name'=>$param['name'],
             'type'=>$param['type'],
+            'cover'=>$param['cover'],
+            'create_time'=>time(),
         ];
     	$bool = M('ArticleColumn')->add($data);
         return $bool;
@@ -26,6 +28,7 @@ class ArticleModel extends BaseModel{
     	$data = [
             'name'=>$param['name'],
             'type'=>$param['type'],
+            'cover'=>$param['cover'],
         ];
     	$bool = M('ArticleColumn')->where(['id' => $id])->save($data);
         return $bool;

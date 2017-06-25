@@ -947,3 +947,7 @@ function ihttp_request($url, $data = null) {
 
     return $output;
 }
+
+function getTimeStr($int){
+    return date('Y-m-d');
+}

@@ -10,29 +10,118 @@
     <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="__PUBLIC__/statics/hplus/css/mui.min.css" rel="stylesheet">
     <style type="text/css">
-        .mui-content{
-            margin: 12px 10px 0px;
-            background-color: #fff;
-        }
+    li{list-style-type:none}
+        .electricity_n .list_tops p span{ margin-right: 0.5rem; }
+        .electricity_n .list_tops ul li p{ margin-bottom: 0.25rem; line-height: 0.5rem; }
+        .list_tops ul li a img{ background-size: 100% 100%; width: 8.375rem; height: 4.675rem; margin-right:0px; }
+        .electricity_n .list_tops .list_imm{padding: 0.2rem 0.5rem 0.2rem 0.5rem; display: inline-block; display: flex; background-color: #fff; border-bottom: 1px solid #eeeeee;}
+        .electricity_n .list_tops .list_imm h2{ flex: 1;font-size: 0.35rem;color: #96A6B3; }
+        .list_tops a .table_size .wei_biye{ font-size: 0.5rem;color: #585858; font-weight: 600; }  
+        .list_tops a p span{font-size: 12px;color: #B2B2B2;}
+        .list_tops .wei_content{font-size: 0.35rem;color: #666666; text-indent: 0.2rem;text-align: justify; margin-bottom: 0.2rem; line-height: 0.5rem;} 
+        .list_div a img{ width: 8.375rem; height: 4.675rem; }
+        .list_div{padding: 0.6rem 0.5rem 0.5rem 0.5rem; background-color: #fff;} 
+        .list_div .tab_contlis{ margin-bottom: 0.25rem;  }
+        .list_tops ul li a .img_beijing{}
+.data_smai { margin-right:10px; }
+.data_smai img{ 
+width: 24px;height: 24px;margin-right:0px;
+}
+.data_smai sub{ 
+top: 2px;font-size: 13px;
+}
+.liyan{ position: relative;top: 2px;color: #96A6B3; }
+ .list_text ul li .wei_tu {
+    height:0.75rem;
+    width:0.75rem;
+    margin-right: 0.25rem;
+   border-radius: 0.075rem;
+}
+.electricity_n .list_text .list_line li{padding: 0.5rem 0.5rem 0.5rem 0.5rem;}
+.electricity_n .list_tops li a .tabdata .xianq_wei{ font-size: 14px; margin-right:0.675rem;font-size: 14px;color: #96A6B3;line-height: 14px; }
+.electricity_n .list_text ul li .conmm_disp .img_poat{
+    width: 0.70rem!important;
+    height: 0.70rem!important;
+}
+.electricity_n .list_tops li .data_smai{ flex: 1; }
+.wxy_bootom-tex10 {padding: 17px 17px 10px 17px;}
+.electricity_n .list_text ul li .conmm_disp img{ width: 0.5rem; height: 0.5rem; }
+.electricity_n .list_tops a .taba_small_wei{font-size: 12px;color: #2983E0;}
+
     </style>
 </head>
 
-<body style="overflow:hidden;background-color: #fff">
-    <div class="mui-content">
-    <div class="mui-row">
-        <div class="mui-col-sm-12 mui-col-xs-12" ><h4>{$art['title']}</h4></div>
-        <div class="mui-col-sm-6 mui-col-xs-6" style="margin:10px 0px"><p style="color: #428bca;"><?php echo $art['name']; ?></p></div>
-        <div class="mui-col-sm-6 mui-col-xs-6" style="margin:10px 0px;"><p>{$art['create_time']|date="Y-m-d H:i:s",###}</p></div>
-    </div>
-    <div >
-        {$art['content']|htmlspecialchars_decode}
-    </div>
+<body style="background-color: #fff">
+<div class="electricity_n">
+  <div class="list_text list_tops">         <!-- 列表 -->
+    <div class="list_div">
+     <div style=" overflow: hidden;">
+     <div class="table_size">
+     <h3 class="wei_biye" style="color: #585858;font-weight: bold">{$art['title']}</h3>
+     </div>
+       <p class="tab_contlis">
+       <span style="color: #B2B2B2;font-size:12px">{$art['create_time']|getTimeStr}</span>
+       <small class="taba_small_wei" style="color: #2983E0;font-size:12px">{$art['name']}</small>
+       </p>
+       <p class="wei_content">
+       {$art['content']|htmlspecialchars_decode}
+       </p>
+        </div>
+      </div> 
+      <div href="javascript:void(0);" class="list_imm">
+        <h2 class="xianq_wei" style=" padding-top: 5px;font-size:13px">精选留言</h2>
+        <span class="data_smai" onClick="addArtUp({$art['id']} )" >
+        <img class='udz' src="__PUBLIC__/statics/hplus/img/undianz.png" style="display:{$isgood?'none':''}" class='img_poat'>
+        <img class='dz' src="__PUBLIC__/statics/hplus/img/dianz.png" style="display:{$isgood?'':'none'}" class='img_poat'>
+        <sub id="sub">{$art['good_count']}</sub>
+        </span>
+        <span class="data_smai" onClick="addcomment();">
+        <img src="__PUBLIC__/statics/hplus/img/liuyan.png" style=' margin-right:0px;'>
+        <small class="liyan" style="font-size:13px">写留言</small>
+        </span>
+      </div>
+
+      <ul class="list_line" style="padding: 30px;">
+        <?php foreach ($comment as $key => $value) { ?>
+        <li style="display: inline-flex;">
+         <img style="width: 50px;height: 50px;margin: 5px 10px 5px 0px;border-radius: 50px" src="{$value['avatar']}" class='wei_tu'>
+         <a href="javascript:commentup({$value['id']})">
+           <div class="tabdata taba_bottom">
+           <h2 style="line-height:24px" class="xianq_wei">{$value['name']}<small style="line-height:24px;float: right" >{$value['create_time']|getTimeStr}
+           </small></h2>
+           
+          </div>
+          <p style="font-size: 14px;line-height: 16px">{$value['content']}</p>
+        </a>
+      </li> 
+      <?php } ?>
+    </ul>
+  </div>
+</div>
+    
     <!-- 全局js -->
     <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
     <script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
     <script src="__PUBLIC__/statics/hplus/js/mui.min.js?v=3.3.6"></script>
     <script type="text/javascript">
-        mui.init();
+    var addArtUp = function( id , e ){
+        var url = "{:U('home/index/praise')}";
+        console.log(url);
+        var data = {'id':id};
+        $.post(url , data , function(res){
+            if(res.code == 0){
+                mui.toast('点赞+1');
+                $("img.dz").show();
+                $("img.udz").hide();
+                $("#sub").html(parseInt($("#sub").text())+1);
+            }else{
+                mui.toast(res.msg);
+            }
+        },'json')
+    }
+    var addcomment = function( ){
+        location.href = "{:U('home/index/addcomment',array('id'=>$art['id']))}";
+    }
     </script>
 </body>
 

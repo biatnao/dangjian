@@ -32,11 +32,13 @@ class ArticleService {
         $id = $param['id'];
         $name = $param['name'];
         $type = $param['type'];
+        $cover = $param['cover'];
 
         $artObj = $this->getModel('article');
         $data = [
         'name'=>$name,
-        'type'=>$type
+        'type'=>$type,
+        'cover'=>$cover,
         ];
         if( !empty($id) ){
             $bool = $artObj->editcol( $id , $data );

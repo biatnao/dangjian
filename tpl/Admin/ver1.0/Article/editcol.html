@@ -34,7 +34,8 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form method="get" class="form-horizontal">
+                        <form method="post" class="form-horizontal" action="/index.php?m=admin&c=article&a=editcol" class="form-horizontal" enctype="multipart/form-data" id="colform">
+                            <input type="hidden" name="id" value="{$col['id']}">
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">栏目名称</label>
 
@@ -47,7 +48,7 @@
                                 <label class="col-sm-1 control-label">类型</label>
 
                                 <div class="col-sm-5">
-                                    <select class="form-control m-b" name="type">
+                                    <select class="form-control" name="type">
                                         <option value="1" <?php echo $col['type']==1?'selected':''; ?> >普通文章</option>
                                         <option value="2" <?php echo $col['type']==2?'selected':''; ?>>问题</option>
                                     </select>
@@ -55,8 +56,25 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
+                                <label class="col-sm-1 control-label">文章封面</label>
+                                <input type="hidden" class="form-control" name='oldcover' value="{$col['cover']}">
+
+                                <div class="col-sm-5" id="file-pretty">
+                                    <input type="file" class="form-control" name='cover' onchange="onupload()">
+                                </div>
+                            </div>
+                            <?php if($col['cover']){ ?>
+                            <div class="form-group" id="oldcover">
+                                <label class="col-sm-1 control-label"></label>
+                                <div class="col-sm-4 ">
+                                    <img width="150px" height="100px" src="__PUBLIC__/statics/<?php echo $col['cover']; ?>"/>
+                                </div>
+                            </div>
+                            <?php }?>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
-                                    <button class="btn btn-primary" type="button" onclick="editcol(<?php echo $col['id']; ?>)">保存</button>
+                                    <button class="btn btn-primary" type="button" onclick="editcol()">保存</button>
                                     <button class="btn btn-white" type="button">取消</button>
                                 </div>
                             </div>
@@ -69,25 +87,20 @@
 </div>
 <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
+<script src="__PUBLIC__/statics/hplus/js/prettyfile/bootstrap-prettyfile.js"></script>
 <script type="text/javascript">
-    var editcol = function( id = 0 ){
-        var url = 'index.php?m=admin&c=article&a=editcol';
+    $( '#file-pretty input[type="file"]' ).prettyFile();
+    var editcol = function(  ){
         var name = $('input[name=name]').val();
-        var type = $('select[name=type]').val();
-        var data = {
-            'id':id,
-            'name':name,
-            'type':type
+
+        if( $.trim(name) == ""  ){
+            layer.alert("栏目名称不能为空");
+            return false;
         }
-        $.post(url ,data ,function(res){
-            if(res.code == 0){
-                layer.msg(res.msg, function(){
-                        location.href = 'index.php?m=admin&c=article&a=collist';
-                    });
-            }else{
-                layer.alert(res.msg);
-            }
-        } , 'json');
+        document.getElementById("colform").submit();
+    }
+    var onupload = function(){
+        $("#oldcover").hide();
     }
 </script>
 </body>

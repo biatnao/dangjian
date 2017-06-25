@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>申请</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="__PUBLIC__/statics/hplus/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/mui.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/statics/hplus/css/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/statics/hplus/css/login/reset.css">
+    <link rel="stylesheet" href="__PUBLIC__/statics/hplus/css/login/supersized.css">
+    <link rel="stylesheet" href="__PUBLIC__/statics/hplus/css/login/style.css">
+    <style type="text/css">
+    input{
+      background-color: rgba(45,45,45,.15);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+    <?php if($status == 2){?>
+    <h1>正在申请中，请等待审核结果</h1>
+    <?php }else{?>
+      <?php if($status == 0){?>
+      <h1>申请</h1>
+      <?php }else{?>
+      <h1>审核未通过请重新申请</h1>
+      <?php }?>
+      <form action="" method="post">
+          <input type="text" name="name" style="background-color: rgba(45,45,45,.15)" placeholder="请填写申请人">
+          <input type="text" name="idcard" style="background-color: rgba(45,45,45,.15)"  placeholder="请填写工号">
+          <button type="button" onclick="apply()">提交</button>
+          <div class="error"><span>+</span></div>
+      </form>
+    <?php }?>
+      
+      <div class="connect">
+          <p></p>
+          <p>
+              <a class="facebook" href=""></a>
+              <a class="twitter" href=""></a>
+          </p>
+      </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
+  <script src="__PUBLIC__/statics/hplus/js/login/supersized.3.2.7.min.js"></script>
+  <script src="__PUBLIC__/statics/hplus/js/login/supersized-init.js?123"></script>
+  <script src="__PUBLIC__/statics/hplus/js/mui.min.js?v=3.3.6"></script>
+    <!-- 全局js -->
+    <script type="text/javascript">
+        var apply = function(){
+          var name = $('input[name=name]').val();
+          var idcard = $('input[name=idcard]').val();
+          if( $.trim(name)==''){
+            mui.toast("名称不能为空");
+            return false;
+          }
+          if( $.trim(idcard)==''){
+            mui.toast("工号不能为空");
+            return false;
+          }
+          var url = "/index.php?m=home&c=index&a=apply";
+          var data = {
+            'name':name,
+            'idcard':idcard,
+          };
+          $.post(url , data , function(res){
+            if(res.code == 0){
+              mui.toast("成功提交申请");
+            }else{
+              mui.toast(res.msg);
+            }
+          },'json')
+
+        }
+    </script>
+</body>
+
+</html>

@@ -22,7 +22,7 @@ class AdminBaseController extends BaseController {
                 if (IS_AJAX) {
                     ajax_return('','您需要登录！',1);
                 }else{
-                    $this->error('您需要登录！');
+                    $this->error('您需要登录！' , '/admin/index/login');
                 }
             }
 
