@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form method="post" class="form-horizontal" action="/index.php?m=admin&c=article&a=editcol" class="form-horizontal" enctype="multipart/form-data" id="colform">
+                        <form method="post" class="form-horizontal" action="{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=editcol" class="form-horizontal" enctype="multipart/form-data" id="colform">
                             <input type="hidden" name="id" value="{$col['id']}">
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">栏目名称</label>
@@ -49,8 +49,8 @@
 
                                 <div class="col-sm-5">
                                     <select class="form-control" name="type">
-                                        <option value="1" <?php echo $col['type']==1?'selected':''; ?> >普通文章</option>
-                                        <option value="2" <?php echo $col['type']==2?'selected':''; ?>>问题</option>
+                                        <option value="1" <?php echo $col['type']==1?'selected':''; ?> >热点关注</option>
+                                        <option value="2" <?php echo $col['type']==2?'selected':''; ?>>组织生活</option>
                                     </select>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
                                     <button class="btn btn-primary" type="button" onclick="editcol()">保存</button>
-                                    <button class="btn btn-white" type="button">取消</button>
+                                    <button class="btn btn-white" type="button" onclick="back()">取消</button>
                                 </div>
                             </div>
                         </form>
@@ -101,6 +101,9 @@
     }
     var onupload = function(){
         $("#oldcover").hide();
+    }
+    var back = function(){
+        window.history.go(-1)
     }
 </script>
 </body>

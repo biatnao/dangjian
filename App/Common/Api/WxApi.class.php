@@ -19,7 +19,7 @@ class WxApi{
 			// 'debug'=>1
 		];
 		$weObj = new Wechat($options);
-		$weObj->valid();
+		return $weObj->valid();
     }
 
 }

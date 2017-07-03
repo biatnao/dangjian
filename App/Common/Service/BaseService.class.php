@@ -1,5 +1,5 @@
 <?php
-namespace Admin\Service;
+namespace Common\Service;
 
 class BaseService {
 

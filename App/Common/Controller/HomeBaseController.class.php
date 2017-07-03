@@ -4,8 +4,10 @@ namespace Common\Controller;
 class HomeBaseController extends BaseController {
     public function _initialize(){
     	parent::_initialize();
-    	$appid = 'wxb50f43adbb92f1c7';
-    	$secret = 'd3dd76c8451bf23633ca589dd0a481c3';
+    	// $appid = 'wxb50f43adbb92f1c7';
+     //    $secret = 'd3dd76c8451bf23633ca589dd0a481c3';
+        $appid = 'wx3130f97927daaff9';
+    	$secret = 'effd3292b0d059802e727091dfa38636';
     	$this->user_id = 2;//$_SESSION['user_id'];
     	if( empty($this->user_id) ){
     		if( !empty($_GET['code']) ){

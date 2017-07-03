@@ -108,7 +108,7 @@
 <script src="__PUBLIC__/statics/hplus/js/sweetalert/sweetalert.min.js"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
-    var checkuser = function( id = 0  , status ){
+    var checkuser = function( id , status ){
         var url = "index.php?m=admin&c=user&a=checkuser";
         var data = {
             'user_id':id,
@@ -124,7 +124,7 @@
             }
         } , 'json');
     }
-    var getuser = function( id = 0 ){
+    var getuser = function( id ){
         var url = '/index.php?m=admin&c=user&a=getuser&id='+id;
         location.href = url;
     }

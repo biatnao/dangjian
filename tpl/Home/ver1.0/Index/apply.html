@@ -17,13 +17,19 @@
     input{
       background-color: rgba(45,45,45,.15);
     }
+    .page-container {
+        margin: 30% auto 0 auto;
+    }
     </style>
 </head>
 
 <body>
     <div class="page-container">
     <?php if($status == 2){?>
-    <h1>正在申请中，请等待审核结果</h1>
+    <h1>正在申请中</h1>
+    <h1>请等待审核结果</h1>
+    <?php }elseif($status == 1){?>
+    <h1>审核已通过</h1>
     <?php }else{?>
       <?php if($status == 0){?>
       <h1>申请</h1>
@@ -31,8 +37,10 @@
       <h1>审核未通过请重新申请</h1>
       <?php }?>
       <form action="" method="post">
-          <input type="text" name="name" style="background-color: rgba(45,45,45,.15)" placeholder="请填写申请人">
-          <input type="text" name="idcard" style="background-color: rgba(45,45,45,.15)"  placeholder="请填写工号">
+          <input type="text" name="name" style="background-color: rgba(45,45,45,.15)" placeholder="请填写姓名">
+          <input type="text" name="phone" style="background-color: rgba(45,45,45,.15)"  placeholder="请填写手机号">
+<input type="text" name="department" style="background-color: rgba(45,45,45,.15)"  placeholder="所属科室">
+<input type="text" name="branch" style="background-color: rgba(45,45,45,.15)"  placeholder="所属党支部">
           <button type="button" onclick="apply()">提交</button>
           <div class="error"><span>+</span></div>
       </form>
@@ -56,23 +64,37 @@
     <script type="text/javascript">
         var apply = function(){
           var name = $('input[name=name]').val();
-          var idcard = $('input[name=idcard]').val();
+          var phone = $('input[name=phone]').val();
+          var department = $('input[name=department]').val();
+          var branch = $('input[name=branch]').val();
           if( $.trim(name)==''){
             mui.toast("名称不能为空");
             return false;
           }
-          if( $.trim(idcard)==''){
-            mui.toast("工号不能为空");
+          if( $.trim(phone)==''){
+            mui.toast("手机号不能为空");
             return false;
           }
-          var url = "/index.php?m=home&c=index&a=apply";
+          if( $.trim(department)==''){
+            mui.toast("科室不能为空");
+            return false;
+          }
+          if( $.trim(branch)==''){
+            mui.toast("党支部不能为空");
+            return false;
+          }
+          var url = "{:C('SITE_FINAL')}"+"/index.php?m=home&c=index&a=apply";
           var data = {
             'name':name,
-            'idcard':idcard,
+            'phone':phone,
+            'department':department,
+            'branch':branch,
           };
           $.post(url , data , function(res){
             if(res.code == 0){
-              mui.toast("成功提交申请");
+              mui.alert("成功提交申请",'',function(){
+                window.location.reload();
+              });
             }else{
               mui.toast(res.msg);
             }

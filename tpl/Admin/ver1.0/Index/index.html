@@ -49,7 +49,7 @@
                                 <li><a class="J_menuItem" href="mailbox.html">信箱</a>
                                 </li> -->
                                 <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
+                                <li><a href="{:C('SITE_FINAL')}/index.php?m=admin&c=index&a=loginout">安全退出</a>
                                 </li>
                             </ul>
                         </div>
@@ -59,29 +59,39 @@
                     <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
+                            <span class="nav-label">分栏管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=collist&type=1">热点关注</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=collist&type=2">组织生活</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=user&a=userlist">党员之家</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
                             <span class="nav-label">内容管理</span>
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="/index.php?m=admin&c=article&a=collist">栏目管理</a>
+                                <a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=artlist">文章管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="/index.php?m=admin&c=article&a=artlist">文章管理</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="/index.php?m=admin&c=article&a=bannerlist">轮播图管理</a>
+                                <a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=bannerlist">轮播图管理</a>
                             </li>
                             <!-- <li>
                                 <a class="J_menuItem" href="/index.php?m=admin&c=question&a=questionlist">题库管理</a>
                             </li> -->
                         </ul>
                     </li>
-                    
-                    <li>
-                        <a class="J_menuItem" href="/index.php?m=admin&c=user&a=userlist"><i class="fa fa-desktop"></i> <span class="nav-label">用户管理</span></a>
-                    </li>
-
                     <li>
                         <a href="#">
                             <i class="fa fa-flask"></i> 
@@ -89,10 +99,10 @@
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="/index.php?m=admin&c=user&a=adminlist">管理员管理</a>
+                            <li><a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=user&a=adminlist">管理员管理</a>
                             </li>
-                            <li><a class="J_menuItem" href="/index.php?m=admin&c=rule&a=ruleindex">权限管理</a>
-                            </li>
+                            <!-- <li><a class="J_menuItem" href="{:C('SITE_FINAL')}/index.php?m=admin&c=rule&a=ruleindex">权限管理</a>
+                            </li>-->
                         </ul>
                     </li>
                 </ul>
@@ -131,10 +141,10 @@
                         </li>
                     </ul>
                 </div>
-                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                <a href="{:C('SITE_FINAL')}/index.php?m=admin&c=index&a=loginout" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="/index.php?m=admin&c=index&a=welcome" frameborder="0" data-id="index" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{:C('SITE_FINAL')}/index.php?m=admin&c=index&a=welcome" frameborder="0" data-id="index" seamless></iframe>
             </div>
             <div class="footer">
                 <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>

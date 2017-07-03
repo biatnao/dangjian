@@ -87,8 +87,8 @@
             closeEffect: 'none'
         });
     });
-    var deletebanner = function( id = 0 ){
-        var url = '/index.php?m=admin&c=article&a=deletebanner';
+    var deletebanner = function( id ){
+        var url = '{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=deletebanner';
         var data = {
             'id':id
         }
@@ -102,8 +102,8 @@
             }
         } , 'json');
     }
-    var editbanner = function( id = 0 ){
-        var url = '/index.php?m=admin&c=article&a=editbanner&id='+id;
+    var editbanner = function( id ){
+        var url = '{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=editbanner&id='+id;
         location.href = url;
     }
 </script>

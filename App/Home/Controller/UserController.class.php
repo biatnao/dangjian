@@ -83,27 +83,21 @@ class IndexController extends HomeBaseController {
     }
 
     public function apply(){
-        $user_id = $this->user_id;
+        $status = I('status');
         if( IS_AJAX ){
             $name = I('name');
-            $phone = I('phone');
-            $department = I('department');
-            $branch = I('branch');
-            
+            $idcard = I('idcard');
+            $user_id = $this->user_id;
 
             $udpate = [
             'name'=>$name,
-            'phone'=>$phone,
-            'department'=>$department,
-            'branch'=>$branch,
+            'idcard'=>$idcard,
             'status'=>2
             ];
-            // dump($udpate);
             M('user')->where(['id'=>$user_id])->save($udpate);
             echo json_encode(['code'=>0,'msg'=>'申请成功']);
             exit;
         }else{
-            $status = M('user')->where(['id'=>$user_id])->getField('status');
             $this->assign('status',$status);
             $this->display();
         }

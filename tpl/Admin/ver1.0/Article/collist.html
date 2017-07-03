@@ -74,7 +74,7 @@
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
     var delcol = function( id ){
-        var url = 'index.php?m=admin&c=article&a=delcol';
+        var url = '{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=delcol';
         var data = {
             'id':id
         }
@@ -89,7 +89,7 @@
         } , 'json');
     }
     var editcol = function( id ){
-        var url = 'index.php?m=admin&c=article&a=editcol&id='+id;
+        var url = '{:C('SITE_FINAL')}/index.php?m=admin&c=article&a=editcol&id='+id;
         location.href = url;
     }
 </script>

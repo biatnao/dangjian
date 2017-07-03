@@ -27,7 +27,7 @@
 <body class="signin">
     <div class="signinpanel">
         <div class="row">
-            <div class="col-sm-7">
+            <!-- <div class="col-sm-7">
                 <div class="signin-info">
                     <div class="logopanel m-b">
                         <h1>[ H+ ]</h1>
@@ -43,10 +43,10 @@
                     </ul>
                     <strong>还没有账号？ <a href="/index.php?m=admin&c=index&a=register">立即注册&raquo;</a></strong>
                 </div>
-            </div>
-            <div class="col-sm-5">
+            </div> -->
+            <div class="col-sm-12">
                 <h4 class="no-margins">登录：</h4>
-                <p class="m-t-md">登录后台</p>
+                <!-- <p class="m-t-md">登录后台</p> -->
                 <input type="text" class="form-control uname" placeholder="用户名" name="username"/>
                 <input type="password" class="form-control pword m-b" placeholder="密码" name="pwd"/>
                 <a href="">忘记密码了？</a>
@@ -64,14 +64,14 @@
     <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
     <script type="text/javascript">
     var login = function(){
-        var url = "/index.php?m=admin&c=index&a=login";//"{:U('Admin/index/login')}";
+        var url = "{:C('SITE_FINAL')}/index.php?m=admin&c=index&a=login";//"{:U('Admin/index/login')}";
         var username = $('input[name=username]').val();
         var pwd = $('input[name=pwd]').val();
         var data = { 'username':username , 'pwd':pwd };
         $.post(url , data , function( res ){
             if( res.code === 0 ){
                 layer.msg(res.msg, function(){
-                    location.href = '/index.php?m=admin&c=index&a=index';
+                    location.href = '{:C('SITE_FINAL')}/index.php?m=admin&c=index&a=index';
                 });
             }else{
                 layer.alert(res.msg);

@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Service;
+use Common\Service\BaseService;
 
 class RuleService extends BaseService{
 
