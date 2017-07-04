@@ -1,5 +1,5 @@
 <?php
-namespace Common\Api;
+namespace Wx\Api;
 use Wechat\Wechat;
 
 class WxApi{
@@ -19,7 +19,7 @@ class WxApi{
 			// 'debug'=>1
 		];
 		$weObj = new Wechat($options);
-		return $weObj->valid();
+		$weObj->valid();
     }
 
 }

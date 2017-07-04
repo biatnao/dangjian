@@ -6,7 +6,7 @@ class HomeBaseController extends BaseController {
     	parent::_initialize();
     	$appid = 'wxb50f43adbb92f1c7';
     	$secret = 'd3dd76c8451bf23633ca589dd0a481c3';
-    	$this->user_id = 2;//$_SESSION['user_id'];
+    	$this->user_id = $_SESSION['user_id'];
     	if( empty($this->user_id) ){
     		if( !empty($_GET['code']) ){
     			$code = $_GET['code'];
@@ -26,7 +26,7 @@ class HomeBaseController extends BaseController {
     			$this->user_id = $_SESSION['user_id'];
     		}else{
 	    		$wxconfig = M('wx_config')->where(['id'=>1])->find();
-		    	$redirect_uri = "http://".$_SERVER['HTTP_HOST']."/index.php?m=home&c=index&a=index";
+		    	$redirect_uri = "http://".$_SERVER['HTTP_HOST']."/dz/index.php?m=home&c=index&a=index";
 		    	// dump($redirect_uri);exit;
 		    	$redirect_uri = urlencode($redirect_uri);
 	    		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={$appid}&redirect_uri={$redirect_uri}&response_type=code&scope=snsapi_base&state=1#wechat_redirect";
@@ -49,11 +49,11 @@ class HomeBaseController extends BaseController {
 			// }else{
 			// 	//提醒关注
 			// }
-			if($user['status'] != 1){
-				// if(__ACTION__!='/Home/Index/apply'){
-				// 	redirect("/index.php?m=home&c=index&a=apply&status={$user['status']}");
-				// }
-			}
+			//if($user['status'] != 1){
+				//if(__ACTION__!=$url_final.'/Home/Index/apply'){
+					//redirect($url_final."/index.php?m=home&c=index&a=apply&status={$user['status']}");
+				//}
+			//}
 			
 		}
 		

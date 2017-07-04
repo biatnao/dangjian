@@ -17,9 +17,10 @@ class ArticleController extends AdminBaseController{
 	
     public function collist(){
     	if( IS_GET ){
+    		$type = I('type');
 			$artObj = $this->getService('article');
 			
-			$col = $artObj->collist();
+			$col = $artObj->collist(['type'=>$type]);
 			unset($artObj);
 
 			$this->assign('col',$col['list']);
@@ -49,7 +50,7 @@ class ArticleController extends AdminBaseController{
 			];
 			$ret = $artObj->editcol( $param );
 			unset($artObj);
-			$this->success( '编辑成功' , 'admin/article/collist' );
+			$this->success( '编辑成功' ,  C('SITE_FINAL').'/index.php?m=admin&c=article&a=collist' );
 		}else{
 			if( !empty($id) ){
 				$col = $artObj->getcol( $id );
@@ -84,6 +85,7 @@ class ArticleController extends AdminBaseController{
     public function artlist(){
     	if( IS_GET ){
 			$col_id = I( 'col_id' );
+			
 			$param = [
 				'col_id'=>$col_id,
 			];
@@ -126,7 +128,7 @@ class ArticleController extends AdminBaseController{
 			$ret = $artObj->editart( $param );
 			unset($artObj);
 			if( $ret['code'] == 0 ){
-				$this->success('操作成功', 'Admin/Article/artlist');
+				$this->success('操作成功',  C('SITE_FINAL').'/index.php?m=Admin&c=Article&a=artlist');
 			}else{
 				$this->error('操作失败');
 			}
@@ -170,6 +172,7 @@ class ArticleController extends AdminBaseController{
 
     public function bannerlist(){
     	if( IS_GET ){
+    		
 			$artObj = $this->getService('article');
 			$ret = $artObj->bannerlist();
 			unset($artObj);
@@ -197,7 +200,7 @@ class ArticleController extends AdminBaseController{
 			$ret = $artObj->editbanner( $param );
 			unset($artObj);
 			if( $ret['code'] == 0 ){
-				$this->success('操作成功', 'Admin/Article/bannerlist');
+				$this->success('操作成功', C('SITE_FINAL').'/index.php?m=Admin&c=Article&a=bannerlist');
 			}else{
 				$this->error('操作失败');
 			}

@@ -73,7 +73,7 @@
 <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
-    var delcol = function( id ){
+    var delcol = function( id  ){
         var url = 'index.php?m=admin&c=article&a=delcol';
         var data = {
             'id':id
@@ -88,8 +88,8 @@
             }
         } , 'json');
     }
-    var editcol = function( id ){
-        var url = 'index.php?m=admin&c=article&a=editcol&id='+id;
+    var editcol = function( id  ){
+        var url = '/dz/index.php?m=admin&c=article&a=editcol&id='+id;
         location.href = url;
     }
 </script>

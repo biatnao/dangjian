@@ -80,60 +80,10 @@
 
 <body>
     <div class="electricity_n">
-        <div class="tab1">
-            <section class="slider">
-                <div class="flexslider" style="margin-bottom:0px">
-                <ul class="slides">
-                    <?php foreach ($banner as $key => $value) { ?>
-                    <li>
-                        <a href="<?php echo $value['linkurl'];?>">
-                        <img src="__PUBLIC__/statics/<?php echo $value['imgurl'];?>" >
-                        </a>
-                    </li>
-                    <?php } ?>
-                </ul>
-                </div>
-            </section>
-        </div>
-        <!-- 栏目 -->
-        <!-- <div class="thecolumn">     
-        <?php $length = count($column);$final = $length-1;?>
-        <?php foreach ($column as $ckey => $cvalue) { ?>
-        <?php if( $ckey%3==0 ){ ?>
-        <div class="thecolumn thedisplay" style="display: flex;">
-        <?php } ?>
-        <div class="columns">
-        <a href="/index.php?m=home&c=index&a=getartlist&column_id=<?php echo $cvalue['id'];?>">
-        <li>
-        <img style="width:48px;height:48px" src="__PUBLIC__/statics/{$cvalue['cover']|default='hplus/img/profile_small.jpg'}">
-        </li>
-        <p><?php echo $cvalue['name'];?></p>
-        </a>
-        </div>
-        <?php if( $ckey%3==2 || $final == $ckey ){ ?>
-        </div>
-        <?php } ?>
-        <?php } ?> 
-        </div> -->
+        <h3 style="margin-top:40%;text-align: center">功能正在开发中，敬请期待！</h3>
             <!-- 列表 -->
-            <div class="list_text">         
-                <div class="list_tab">
-                    <img style="width:20px;height:20px" src="__PUBLIC__/statics/hplus/img//xin.png">
-                    <h3 style="font-size:14px;line-height: 15px;">最新动态</h3>
-                </div>
-                <ul class='art' style="padding: 0px;">
-                <?php $list = $art;if(!empty($list)){?>
-                     <include file="articlelist-item" /> 
-                     <?php }else{ ?>
-                     <li><div style="text-align:center;margin:20px;width:100%">没有更多了...</h3></div>
-                     <?php } ?>
-                </ul>
-            </div>
         </div>
-        <div class="weui-infinite-scroll" style="display: none">
-          <div class="infinite-preloader"></div>
-          <div style="text-align: center;width: 100%;margin-top:-10px;padding:8px;background-color: #fff;">正在加载...</div>
-        </div>
+        
     <!-- 全局js -->
     <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
     <script src="__PUBLIC__/statics/hplus/js/bootstrap.min.js?v=3.3.6"></script>
@@ -149,7 +99,7 @@
                 animationLoop: true,
                 slideshow: true,
                 directionNav: false,
-                slideshowSpeed:4000,
+                slideshowSpeed: 2000,
                 pauseOnHover: true,
                 //触屏滑动后继续自动轮播
                 before: function (slider) {
@@ -161,11 +111,10 @@
         var cu_page = {$p|default=1};
         var column_id = {$column_id|default=1};
         var getlist = function(){
-         cu_page++;
-          var _url ="index.php?m=home&c=index&a=getartlist"; 
-          var _data = { 'page' : cu_page ,'column_id':column_id };
+          cu_page++;
+          var _url = "{:U('home/index/getartlist')}";
+          var _data = { 'page' : cu_page ,'column_id':column_id};
           $.get( _url , _data , function( res ) {
-
             if( res == null || res == '' ){
               $("ul.art").append("<li><div style='text-align:center;width:100%'>没有更多了...</div></li>");
               ismax = true;

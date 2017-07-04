@@ -35,7 +35,11 @@ class IndexController extends AdminBaseController {
 			$this->display();
 		}
     }
-
+public function loginout(){
+		$_SESSION['user']['id'] = 0;
+		$_SESSION['user']['name'] = '';
+		$this->success( '登出成功' , '/dz/index.php?m=admin&c=index&a=login' );
+    }
     public function index(){
 		$this->display();
     }

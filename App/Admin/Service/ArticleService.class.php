@@ -16,7 +16,7 @@ class ArticleService {
 
     public function collist( $param=[] ){
         $artObj = $this->getModel('article');
-        $col = $artObj->collist();
+        $col = $artObj->collist($param);
         unset($artObj);
         return tp_return( 0 , 'ok' , $col );
     }
@@ -166,7 +166,7 @@ class ArticleService {
         return tp_return( 0 , 'ok' , $bool );
     }
 
-    public function bannerlist(){
+    public function bannerlist( ){
         $artObj = $this->getModel('article');
         $banner = $artObj->bannerlist( );
         unset($artObj);

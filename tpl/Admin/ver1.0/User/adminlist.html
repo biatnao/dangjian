@@ -76,7 +76,7 @@
 <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
-    var deladmin = function( id = 0 ){
+    var deladmin = function( id  ){
         var url = 'index.php?m=admin&c=user&a=deleteadmin';
         var data = {
             'id':id
@@ -91,8 +91,8 @@
             }
         } , 'json');
     }
-    var editadmin = function( id = 0 ){
-        var url = '/index.php?m=admin&c=user&a=editadmin&id='+id;
+    var editadmin = function( id ){
+        var url = '/dz/index.php?m=admin&c=user&a=editadmin&id='+id;
         location.href = url;
     }
 </script>

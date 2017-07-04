@@ -8,13 +8,12 @@ class AdminBaseController extends BaseController {
     public function _initialize(){
         parent::_initialize();
         $not_need_login=[
-                'admin/index/login',
-                'admin/index/register',
+               'dz/admin/index/login',
+               'dz/admin/index/register',
             ];
 
         // 转小写以兼容url大小写不统一的问题
         $action=strtolower(trim(__ACTION__,'/'));
-
         if (!in_array($action, $not_need_login)) {
 
             // 检测是否登录
@@ -22,7 +21,7 @@ class AdminBaseController extends BaseController {
                 if (IS_AJAX) {
                     ajax_return('','您需要登录！',1);
                 }else{
-                    $this->error('您需要登录！' , '/admin/index/login');
+                    $this->error('您需要登录！' ,'/dz/index.php?m=admin&c=index&a=login');
                 }
             }
 

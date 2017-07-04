@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form method="post"  action="/index.php?m=admin&c=article&a=editbanner" class="form-horizontal" enctype="multipart/form-data" id="bannerform">
+                        <form method="post"  action="/dz/index.php?m=admin&c=article&a=editbanner" class="form-horizontal" enctype="multipart/form-data" id="bannerform">
                             <input type="hidden" name="id" value="<?php echo $banner['id']; ?>">
                             
                             <div class="form-group">
@@ -68,7 +68,7 @@
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
                                     <button class="btn btn-primary" type="button" onclick="editbanner()">保存</button>
-                                    <button class="btn btn-white" type="button">取消</button>
+                                    <button class="btn btn-white" type="button" onclick="back()">取消</button>
                                 </div>
                             </div>
                         </form>
@@ -87,6 +87,9 @@
 
     var editbanner = function( ){
         document.getElementById("bannerform").submit();
+    }
+var back = function(){
+        window.history.go(-1)
     }
 </script>
 </body>

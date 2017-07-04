@@ -4,7 +4,11 @@ namespace Common\Model;
 class ArticleModel extends BaseModel{
 
     public function collist( $param = [] ){
-        $col = M('ArticleColumn')->order('create_time')->select();
+        $where=[];
+        if($param['type']){
+           $where['type'] = $param['type'];
+        }
+        $col = M('ArticleColumn')->where($where)->order('create_time')->select();
         return $col;
     }
 
@@ -137,7 +141,7 @@ class ArticleModel extends BaseModel{
         return $bool;
     }
 
-    public function bannerlist( $param = [] ){
+    public function bannerlist(  ){
         $banner = M('banner')->order('sort,id')->select();
         return $banner;
     }

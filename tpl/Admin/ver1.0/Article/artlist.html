@@ -76,8 +76,8 @@
 <script src="__PUBLIC__/statics/hplus/js/jquery.min.js?v=2.1.4"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
-    var delart = function( id = 0 ){
-        var url = '/index.php?m=admin&c=article&a=delart';
+    var delart = function( id ){
+        var url = '/dz/index.php?m=admin&c=article&a=delart';
         var data = {
             'id':id
         }
@@ -91,8 +91,8 @@
             }
         } , 'json');
     }
-    var editart = function( id = 0 ){
-        var url = '/index.php?m=admin&c=article&a=editart&id='+id;
+    var editart = function( id  ){
+        var url = '/dz/index.php?m=admin&c=article&a=editart&id='+id;
         location.href = url;
     }
 </script>

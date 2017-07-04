@@ -30,13 +30,12 @@
                     <div class="ibox-title">
                         <h5>个人资料</h5>
                     </div>
-                    <div>
-                        <div class="ibox-content no-padding border-left-right">
-                            <img alt="image" class="img-responsive" src="__PUBLIC__/statics/hplus/img/profile_big.jpg">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-6 ">
+                            <img alt="image" class="img-responsive" style="border-radius: 50%;border-style:none;padding: 15px 20px 20px 20px;" src="{$user['avatar']}">
                         </div>
-                        <div class="ibox-content profile-content">
-                            <h4><strong><?php echo $user['name']; ?></strong>
-                            <?php if($user['status']==1){?>
+                        <div class="col-sm-6 profile-content" style="padding: 15px 20px 20px 20px;">
+                            <p>姓名：{$user['name']}<?php if($user['status']==1){?>
                             <button type="button" class="btn btn-primary btn-sm" style="margin-left:10px;padding: 1px 7px;">
                                已审核
                             </button>
@@ -48,13 +47,11 @@
                             <button type="button" class="btn btn btn-default  btn-sm" style="margin-left:10px;padding: 1px 7px;">
                                 未审核
                             </button>
-                            <?php }?>
-
-
-
-                            </h4>
-                            <p>编号：<?php echo $user['idcard']; ?></p>
-                            
+                            <?php }?></p>
+                            <p>昵称：{$user['nickname']}</p>
+                            <p>手机：{$user['phone']}</p>
+                            <p>科室：{$user['department']}</p>
+                            <p>党支部：{$user['branch']}</p>
                             <div class="row m-t-lg">
                                 
                             </div>
