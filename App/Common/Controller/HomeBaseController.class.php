@@ -4,9 +4,13 @@ namespace Common\Controller;
 class HomeBaseController extends BaseController {
     public function _initialize(){
     	parent::_initialize();
-    	$appid = 'wxb50f43adbb92f1c7';
-    	$secret = 'd3dd76c8451bf23633ca589dd0a481c3';
-    	$this->user_id = $_SESSION['user_id'];
+
+    	// $appid = 'wxb50f43adbb92f1c7';
+     //    $secret = 'd3dd76c8451bf23633ca589dd0a481c3';
+        $appid = 'wx3130f97927daaff9';
+    	$secret = 'effd3292b0d059802e727091dfa38636';
+    	$this->user_id = 2;//$_SESSION['user_id'];
+
     	if( empty($this->user_id) ){
     		if( !empty($_GET['code']) ){
     			$code = $_GET['code'];
@@ -39,16 +43,6 @@ class HomeBaseController extends BaseController {
     	if(empty($user)){
 			$this->error('请先关注');
 		}else{
-			$url_final = C('SITE_FINAL');
-			// if($user['status'] == 0){
-			// 	//申请界面
-			// }elseif($user['status'] == 2){
-			// 	//正在申请界面
-			// }elseif($user['status'] == 3){
-			// 	//申请界面,提示申请失败
-			// }else{
-			// 	//提醒关注
-			// }
 			//if($user['status'] != 1){
 				//if(__ACTION__!=$url_final.'/Home/Index/apply'){
 					//redirect($url_final."/index.php?m=home&c=index&a=apply&status={$user['status']}");

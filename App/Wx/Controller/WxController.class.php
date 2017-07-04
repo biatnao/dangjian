@@ -78,8 +78,11 @@ class WxController extends BaseController {
         $wxconfig = M('wx_config')->where(['id'=>1])->find();
         Log::write(json_encode($wxconfig),'config');
         if(time()>=$wxconfig['token_time']||empty($wxconfig['token'])){
-            $appid = 'wx3130f97927daaff9';
-            $secret = 'effd3292b0d059802e727091dfa38636';
+            // $appid = 'wx3130f97927daaff9';
+            // $secret = 'effd3292b0d059802e727091dfa38636';
+            $appid = 'wxb50f43adbb92f1c7';//ceshi
+            $secret = 'd3dd76c8451bf23633ca589dd0a481c3';//ceshi
+
             $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appid}&secret={$secret}";
             $res = ihttp_get($url);
             Log::write($res,'config');
@@ -219,8 +222,91 @@ class WxController extends BaseController {
         exit;
     }
 
-
-    public function getuser(){
-
+    public function getindustry(){
+        $token = $this->gettoken();
+        $api_url = "https://api.weixin.qq.com/cgi-bin/template/get_industry?access_token={$token}";
+         Log::init([
+            'type'  =>  'File',
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/'
+        ]);
+        $res = ihttp_get($api_url);
+        Log::write($res,'getindustry');
+        $arr = json_decode($res , true);
     }
+
+    public function setindustry(){
+        $token = $this->gettoken();
+        $api_url = "https://api.weixin.qq.com/cgi-bin/template/api_set_industry?access_token={$token}";
+        $data = [
+            "industry_id1"=>21,
+            "industry_id2"=>18
+        ];
+         Log::init([
+            'type'  =>  'File',
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/'
+        ]);
+        $res = ihttp_post($api_url,json_encode($data));
+        Log::write($res,'getindustry');
+        $arr = json_decode($res , true);
+    }
+
+    public function gettemplate(){
+        $token = $this->gettoken();
+        $api_url="https://api.weixin.qq.com/cgi-bin/template/api_add_template?access_token={$token}";
+        $data = [
+            "template_id_short"=>21,
+        ];
+         Log::init([
+            'type'  =>  'File',
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/'
+        ]);
+        $res = ihttp_post($api_url,json_encode($data));
+        Log::write($res,'gettemplate');
+        $arr = json_decode($res , true);
+    }
+
+    public function getallprivatetemplate( ) {
+        $token = $this->gettoken();
+        $url = 'https://api.weixin.qq.com/cgi-bin/template/get_all_private_template?access_token={$token}';
+         Log::init([
+            'type'  =>  'File',
+            'path'  =>  RUNTIME_PATH.'Logs/Wx/'
+        ]);
+        $res = $this->ihttp_get($url);
+         Log::write($res,'getallprivatetemplate');
+        $arr = json_decode($res , true);
+    }
+    
+    public function sendMsg( $touser ){
+        $token = $this->gettoken();
+        $myopenid = 'ozV69s73dWyDUN2PhsOnrTur34oQ';
+        $template_arr = C('FWH_API.TEMPLATE_ARR');
+        $arr = array("touser"=>$myopenid,
+           "template_id"=>$template_arr[0],     //报修模板
+           "url"=>"http://www.baidu.com",            
+           "data"=>array(
+                "first"=>array(
+                "value"=>"维修派单",
+                "color"=>"#173177"
+                ),
+                "keyword1"=>array(
+                "value"=>"2015-4-7",
+                "color"=>"#173177"
+                ),
+                "keyword2"=>array(
+                "value"=>"谭勇",
+                "color"=>"#173177"
+                ),
+                "remark"=>array(
+                "value"=>"请尽快维修",
+                "color"=>"#173177"
+                )
+           )
+                   
+           );
+        $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={$token}';
+        $res = $this->handleApi($url,$data);
+        return $res;
+    }
+
 }

@@ -108,8 +108,9 @@
 <script src="__PUBLIC__/statics/hplus/js/sweetalert/sweetalert.min.js"></script>
 <script src="__PUBLIC__/statics/hplus/js/layer/layer.min.js"></script>
 <script type="text/javascript">
-    var checkuser = function( id  , status ){
-        var url = "index.php?m=admin&c=user&a=checkuser";
+
+    var checkuser = function( id , status ){
+        var url = "{:C('SITE_FINAL')}/index.php?m=admin&c=user&a=checkuser";
         var data = {
             'user_id':id,
             'status':status,
@@ -124,12 +125,13 @@
             }
         } , 'json');
     }
-    var getuser = function( id  ){
-        var url = '/dz/index.php?m=admin&c=user&a=getuser&id='+id;
+
+    var getuser = function( id ){
+        var url = "{:C('SITE_FINAL')}/index.php?m=admin&c=user&a=getuser&id="+id;
         location.href = url;
     }
     var filter = function(){
-        var filter_url = '/dz/index.php?m=admin&c=user&a=userlist';
+        var filter_url = "{:C('SITE_FINAL')}/index.php?m=admin&c=user&a=userlist";
         var name = $('input[name=name]').val();
         var status = $('select[name=status]').val();
         var param_str = '';

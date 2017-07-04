@@ -1,18 +1,8 @@
 <?php
 namespace Admin\Service;
+use Common\Service\BaseService;
 
-class ArticleService {
-
-    public static $modelArrayStatic = [];
-
-    public static function getModel( $name = '' ){
-        if( empty($name) ) return false;
-        $name = ucfirst(strtolower($name));
-        if( !isset(self::$modelArrayStatic[$name]) ){
-            self::$modelArrayStatic[$name] = D( $name );
-        }
-        return self::$modelArrayStatic[$name];
-    }
+class ArticleService extends BaseService {
 
     public function collist( $param=[] ){
         $artObj = $this->getModel('article');
